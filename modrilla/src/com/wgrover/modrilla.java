@@ -28,8 +28,6 @@ public class modrilla extends javax.swing.JFrame {
      */
     // <editor-fold defaultstate="collapsed" desc=" Generated Code ">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
-
         jPanel4 = new javax.swing.JPanel();
         jDialog1 = new javax.swing.JDialog();
         jDialog2 = new javax.swing.JDialog();
@@ -208,7 +206,7 @@ public class modrilla extends javax.swing.JFrame {
         jTextArea5.setColumns(20);
         jTextArea5.setLineWrap(true);
         jTextArea5.setRows(5);
-        jTextArea5.setText(" ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs");
+        jTextArea5.setText(" ;klj;lfkjasdklfjaskl;df j sakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs ;klj;lfkjasdklfjaskl;df jsakjdf ;klsjd;fk las;fkjas;kfjads;kl fjsak;d fj;ksadjaf;klajs;kfs");
         jTextArea5.setWrapStyleWord(true);
         jScrollPane5.setViewportView(jTextArea5);
 
