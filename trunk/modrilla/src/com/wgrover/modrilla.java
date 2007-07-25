@@ -282,7 +282,7 @@ public class modrilla extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Drill a nick, OK?  This isn't very hard.  But I need a multi-line comment here.");
+        jTextArea1.setText("Drill a nick, OK?  This isn't very hard.  But I need a multi-line comment here.  Foo.");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 

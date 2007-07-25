@@ -408,7 +408,7 @@
                     <Property name="columns" type="int" value="20"/>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Drill a nick, OK?  This isn&apos;t very hard.  But I need a multi-line comment here."/>
+                    <Property name="text" type="java.lang.String" value="Drill a nick, OK?  This isn&apos;t very hard.  But I need a multi-line comment here.  Foo."/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
