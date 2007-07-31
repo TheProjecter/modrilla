@@ -6,6 +6,10 @@
 
 package com.wgrover;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
 /**
@@ -122,8 +126,8 @@ public class modrilla extends javax.swing.JFrame {
         millSerialDeviceLabel = new javax.swing.JLabel();
         millSerialDeviceField = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jelly = new javax.swing.JLabel();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
 
@@ -758,17 +762,6 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("6", jPanel11);
 
-        org.jdesktop.layout.GroupLayout jPanel13Layout = new org.jdesktop.layout.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 100, Short.MAX_VALUE)
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 100, Short.MAX_VALUE)
-        );
-
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -776,25 +769,27 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
+        jelly.setText("jLabel41");
+
         org.jdesktop.layout.GroupLayout jPanel12Layout = new org.jdesktop.layout.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap(277, Short.MAX_VALUE)
+                .addContainerGap(209, Short.MAX_VALUE)
                 .add(jButton1)
                 .addContainerGap())
+            .add(jPanel12Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jelly)
+                .addContainerGap(242, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel12Layout.createSequentialGroup()
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 131, Short.MAX_VALUE)
+                .add(jelly)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 256, Short.MAX_VALUE)
                 .add(jButton1)
                 .addContainerGap())
         );
@@ -844,7 +839,26 @@ public class modrilla extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 // TODO add your handling code here:
+        BufferedImage image=new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
+        Graphics graphics=image.getGraphics();
         
+        graphics.setColor(Color.black);
+        graphics.drawLine(50,50,100,100);
+        
+        graphics.setColor(Color.red);
+        graphics.fillRect(50,30,20,100);
+        
+        graphics.setColor(Color.pink);
+        graphics.drawOval(80,20,60,30);
+        
+        graphics.setColor(new Color(40,100,200));
+        
+        for (int a=0;a<20;a++)
+            graphics.drawLine(a*10,40,a*11,120);
+        
+        graphics.dispose();
+
+        jelly.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
@@ -960,7 +974,6 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1000,6 +1013,7 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel jelly;
     private javax.swing.JTextField millSerialDeviceField;
     private javax.swing.JLabel millSerialDeviceLabel;
     private javax.swing.JComboBox millUnitsCombo;
