@@ -128,7 +128,7 @@ public class modrilla extends javax.swing.JFrame {
         millSerialDeviceLabel = new javax.swing.JLabel();
         millSerialDeviceField = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
-        jelly = new javax.swing.JLabel();
+        inputPlot = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
@@ -764,9 +764,8 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("6", jPanel11);
 
-        jelly.setBackground(new java.awt.Color(255, 255, 255));
-        jelly.setText("jLabel41");
-        jelly.setOpaque(true);
+        inputPlot.setBackground(new java.awt.Color(255, 255, 255));
+        inputPlot.setOpaque(true);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -782,7 +781,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jelly, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                    .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
                     .add(jButton1))
                 .addContainerGap())
         );
@@ -790,7 +789,7 @@ public class modrilla extends javax.swing.JFrame {
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jelly, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
+                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jButton1)
                 .addContainerGap())
@@ -841,7 +840,7 @@ public class modrilla extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 // TODO add your handling code here:
-        BufferedImage image=new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
+        BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics=image.getGraphics();
         
         graphics.setColor(Color.BLACK);
@@ -851,6 +850,7 @@ public class modrilla extends javax.swing.JFrame {
         graphics.fillOval(10,20,2,2);
         graphics.fillOval(10,30,1,1);
 
+        graphics.fillOval(image.getWidth()/2,image.getHeight()/2,3,3);
         
         //graphics.setColor(Color.black);
         //graphics.drawLine(50,50,100,100);
@@ -863,7 +863,7 @@ public class modrilla extends javax.swing.JFrame {
         
         graphics.dispose();
 
-        jelly.setIcon(new ImageIcon(image));
+        inputPlot.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
@@ -928,6 +928,7 @@ public class modrilla extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox alignmentModeCombo;
     private javax.swing.JComboBox inputDXFFileUnitsCombo;
+    private javax.swing.JLabel inputPlot;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JDialog jDialog1;
@@ -1018,7 +1019,6 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
-    private javax.swing.JLabel jelly;
     private javax.swing.JTextField millSerialDeviceField;
     private javax.swing.JLabel millSerialDeviceLabel;
     private javax.swing.JComboBox millUnitsCombo;
