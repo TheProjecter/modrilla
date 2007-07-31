@@ -32,6 +32,8 @@ public class modrilla extends javax.swing.JFrame {
      */
     // <editor-fold defaultstate="collapsed" desc=" Generated Code ">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
+
         jPanel4 = new javax.swing.JPanel();
         jDialog1 = new javax.swing.JDialog();
         jDialog2 = new javax.swing.JDialog();
@@ -126,8 +128,8 @@ public class modrilla extends javax.swing.JFrame {
         millSerialDeviceLabel = new javax.swing.JLabel();
         millSerialDeviceField = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jelly = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
 
@@ -762,6 +764,10 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("6", jPanel11);
 
+        jelly.setBackground(new java.awt.Color(255, 255, 255));
+        jelly.setText("jLabel41");
+        jelly.setOpaque(true);
+
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -769,16 +775,14 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
-        jelly.setText("jLabel41");
-
         org.jdesktop.layout.GroupLayout jPanel12Layout = new org.jdesktop.layout.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
+            .add(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jelly, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jelly, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
                     .add(jButton1))
                 .addContainerGap())
         );
@@ -786,8 +790,8 @@ public class modrilla extends javax.swing.JFrame {
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jelly, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 39, Short.MAX_VALUE)
+                .add(jelly, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jButton1)
                 .addContainerGap())
         );
@@ -811,7 +815,7 @@ public class modrilla extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+            .add(layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
