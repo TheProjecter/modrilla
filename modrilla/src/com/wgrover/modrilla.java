@@ -121,12 +121,12 @@ public class modrilla extends javax.swing.JFrame {
         millSerialDeviceField = new javax.swing.JTextField();
         jPanel13 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jScrollPane7 = new javax.swing.JScrollPane();
         inputFileTextArea = new javax.swing.JTextArea();
         jPanel12 = new javax.swing.JPanel();
         inputPlot = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
 
@@ -214,9 +214,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel39)
                     .add(jComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("1", jPanel1);
+        jTabbedPane1.addTab("Setup", jPanel1);
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Tahoma", 0, 13));
@@ -289,7 +289,7 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(108, 108, 108))
         );
-        jTabbedPane1.addTab("2", jPanel2);
+        jTabbedPane1.addTab("Drill nick", jPanel2);
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -341,9 +341,9 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jLabel12)
                     .add(jLabel13)
                     .add(jTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(185, Short.MAX_VALUE))
+                .addContainerGap(169, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("3", jPanel3);
+        jTabbedPane1.addTab("Align to nick", jPanel3);
 
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
@@ -459,9 +459,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("4", jPanel5);
+        jTabbedPane1.addTab("CAD marks", jPanel5);
 
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
@@ -577,9 +577,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("5", jPanel6);
+        jTabbedPane1.addTab("Align to marks", jPanel6);
 
         jTextArea6.setColumns(20);
         jTextArea6.setRows(5);
@@ -692,9 +692,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(millSerialDeviceLabel)
                     .add(millSerialDeviceField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(81, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("6", jPanel11);
+        jTabbedPane1.addTab("Options", jPanel11);
 
         jButton2.setText("Select DXF file...");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -702,8 +702,6 @@ public class modrilla extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-
-        jButton3.setText("Convert file");
 
         inputFileTextArea.setColumns(20);
         inputFileTextArea.setLineWrap(true);
@@ -719,8 +717,7 @@ public class modrilla extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(jScrollPane7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
-                    .add(jButton2)
-                    .add(jButton3))
+                    .add(jButton2))
                 .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
@@ -730,21 +727,21 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jButton2)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jButton3)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
-        jTabbedPane1.addTab("7", jPanel13);
+        jTabbedPane1.addTab("Input file", jPanel13);
 
         inputPlot.setBackground(new java.awt.Color(255, 255, 255));
         inputPlot.setOpaque(true);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Plot  input file");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jButton3.setText("Plot output file");
 
         org.jdesktop.layout.GroupLayout jPanel12Layout = new org.jdesktop.layout.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -754,19 +751,24 @@ public class modrilla extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
-                    .add(jButton1))
+                    .add(jPanel12Layout.createSequentialGroup()
+                        .add(jButton1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 63, Short.MAX_VALUE)
+                        .add(jButton3)))
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
+                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jButton1)
+                .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jButton1)
+                    .add(jButton3))
                 .addContainerGap())
         );
-        jTabbedPane1.addTab("tab7", jPanel12);
+        jTabbedPane1.addTab("Plot", jPanel12);
 
         nextButton.setText("Next  step \u2192");
         nextButton.addActionListener(new java.awt.event.ActionListener() {
