@@ -793,18 +793,18 @@ public class modrilla extends javax.swing.JFrame {
         );
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void xMODa1FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMODa1FieldActionPerformed
 // TODO add your handling code here:
     }//GEN-LAST:event_xMODa1FieldActionPerformed
-
+    
     private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
 // TODO add your handling code here:
         aboutDialog.setSize(300,400);
         aboutDialog.setVisible(!aboutDialog.isVisible());
-       
+        
     }//GEN-LAST:event_aboutButtonActionPerformed
-
+    
     private void selectInputFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectInputFileButtonActionPerformed
 // TODO add your handling code here:
         
@@ -812,7 +812,7 @@ public class modrilla extends javax.swing.JFrame {
         inputFileTextArea.setText(jFileChooser1.getSelectedFile().toString());
         infile=jFileChooser1.getSelectedFile();
         
-
+        
         
         
         // BIG PASTE STARTS HERE
@@ -975,8 +975,8 @@ public class modrilla extends javax.swing.JFrame {
             
             out.close();
         } catch (IOException ioe) {}
-
-
+        
+        
         
         
         
@@ -995,20 +995,22 @@ public class modrilla extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_selectInputFileButtonActionPerformed
-
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 // TODO add your handling code here:
         BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics=image.getGraphics();
         
         graphics.setColor(Color.BLACK);
-        graphics.fillOval(10,10,3,3);
-        graphics.fillOval(20,10,3,3);
-        graphics.fillOval(30,10,3,3);
-        graphics.fillOval(10,20,2,2);
-        graphics.fillOval(10,30,1,1);
-
-        graphics.fillOval(image.getWidth()/2,image.getHeight()/2,3,3);
+        
+        
+        //graphics.fillOval(10,10,3,3);
+        //graphics.fillOval(20,10,3,3);
+        //graphics.fillOval(30,10,3,3);
+        //graphics.fillOval(10,20,2,2);
+        //graphics.fillOval(10,30,1,1);
+        
+        //graphics.fillOval(image.getWidth()/2,image.getHeight()/2,3,3);
         
         //graphics.setColor(Color.black);
         //graphics.drawLine(50,50,100,100);
@@ -1020,7 +1022,7 @@ public class modrilla extends javax.swing.JFrame {
         //graphics.drawOval(80,20,60,30);
         
         graphics.dispose();
-
+        
         inputPlot.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
     
@@ -1108,7 +1110,7 @@ public class modrilla extends javax.swing.JFrame {
     
     private int x=0;
     private int y=0;
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel DXFmarksPanel;
     private javax.swing.JButton aboutButton;
