@@ -911,6 +911,12 @@ public class modrilla extends javax.swing.JFrame {
                     holes=hole;
                     hole++;
                     
+                    //record new xDXFmax, yDXFmax, xMODmax, and yMODmax, if any
+                    if(xDXF>xDXFmax) {xDXFmax=xDXF;}
+                    
+                    
+                    
+                    
                     //report that we're drilling a hole at (xMOD,yMOD)
                     out.write("\necho 'Drilling hole "+circles+" at ("+(int)xMOD+","+(int)yMOD+")'\n");
                     
@@ -1105,8 +1111,16 @@ public class modrilla extends javax.swing.JFrame {
     double [] yDXFholes = new double [100];
     double [] xMODholes = new double [100];
     double [] yMODholes = new double [100];
-    private int holes=0;
-    private int hole=0;
+    private double xDXFmax=0.0;
+    private double xDXFmin=0.0;
+    private double yDXFmax=0.0;
+    private double yDXFmin=0.0;
+    private double xMODmax=0.0;
+    private double xMODmin=0.0;
+    private double yMODmax=0.0;
+    private double yMODmin=0.0;
+    private double holes=0;
+    private double hole=0;
     
     private int x=0;
     private int y=0;
