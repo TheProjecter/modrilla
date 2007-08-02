@@ -802,15 +802,17 @@ public class modrilla extends javax.swing.JFrame {
 // TODO add your handling code here:
         aboutDialog.setSize(300,400);
         aboutDialog.setVisible(!aboutDialog.isVisible());
+       
     }//GEN-LAST:event_aboutButtonActionPerformed
 
     private void selectInputFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectInputFileButtonActionPerformed
 // TODO add your handling code here:
+        
         jFileChooser1.showOpenDialog(this);
         inputFileTextArea.setText(jFileChooser1.getSelectedFile().toString());
         infile=jFileChooser1.getSelectedFile();
         
-        
+
         
         
         // BIG PASTE STARTS HERE
@@ -900,6 +902,14 @@ public class modrilla extends javax.swing.JFrame {
                     //conversion math
                     xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[0];
                     yMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[1];
+                    
+                    //remember (xDXF,yDXF) and (xMOD,yMOD) for plotting later
+                    xDXFholes[hole]=xDXF;
+                    yDXFholes[hole]=yDXF;
+                    xMODholes[hole]=xMOD;
+                    yMODholes[hole]=yMOD;
+                    holes=hole;
+                    hole++;
                     
                     //report that we're drilling a hole at (xMOD,yMOD)
                     out.write("\necho 'Drilling hole "+circles+" at ("+(int)xMOD+","+(int)yMOD+")'\n");
@@ -1088,6 +1098,13 @@ public class modrilla extends javax.swing.JFrame {
     }
     
     File infile=null;
+    
+    double [] xDXFholes = new double [100];
+    double [] yDXFholes = new double [100];
+    double [] xMODholes = new double [100];
+    double [] yMODholes = new double [100];
+    private int holes=0;
+    private int hole=0;
     
     private int x=0;
     private int y=0;
