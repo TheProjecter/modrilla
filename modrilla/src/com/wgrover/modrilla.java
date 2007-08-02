@@ -894,10 +894,10 @@ public class modrilla extends javax.swing.JFrame {
             while ((line=in.readLine())!=null) {
                 
                 if(scanmode==2) {
-                    xDXF=Float.parseFloat(line)/scaleFactor;
+                    xDXF=Double.parseDouble(line)/scaleFactor;
                     scanmode=3;
                 } else if(scanmode==4) {
-                    yDXF=Float.parseFloat(line)/scaleFactor;
+                    yDXF=Double.parseDouble(line)/scaleFactor;
                     
                     //conversion math
                     xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[0];
@@ -911,9 +911,33 @@ public class modrilla extends javax.swing.JFrame {
                     holes=hole;
                     hole++;
                     
-                    //record new xDXFmax, yDXFmax, xMODmax, and yMODmax, if any
-                    if(xDXF>xDXFmax) {xDXFmax=xDXF;}
+                    //if this is the first hole, then set MAX and MIN to these coordinates
+                    if(holes==0) {
+                        xDXFmax=xDXF;
+                        xDXFmin=xDXF;
+                        yDXFmax=yDXF;
+                        yDXFmin=yDXF;
+                        xMODmax=xMOD;
+                        xMODmin=xMOD;
+                        yDXFmax=yDXF;
+                        yDXFmin=yDXF;
+                    }
                     
+                    //otherwise, check for new MAX and MIN coordinates
+                    else {
+                        //record new xDXFmax, xDXFmin, yDXFmax, and yDXFmin, if any
+                        if(xDXF>xDXFmax) {xDXFmax=xDXF;}
+                        if(xDXF<xDXFmin) {xDXFmin=xDXF;}
+                        if(yDXF>yDXFmax) {yDXFmax=yDXF;}
+                        if(yDXF<yDXFmin) {yDXFmin=yDXF;}
+                        
+                        //record new xMODmax, xMODmin, yMODmax, and yMODmin, if any
+                        if(xMOD>xMODmax) {xMODmax=xMOD;}
+                        if(xMOD<xMODmin) {xMODmin=xMOD;}
+                        if(yMOD>yMODmax) {yMODmax=yMOD;}
+                        if(yMOD<yMODmin) {yMODmin=yMOD;}
+                    }
+                                
                     
                     
                     
@@ -1004,10 +1028,38 @@ public class modrilla extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 // TODO add your handling code here:
+        
+        /*
+         *   
+         *                           0   xDXFmin                             xDXFmax  inputPlot.getWidth() 
+         *                           |      |               |                   |      |
+         *                           V      V               V                   V      V
+         *                      0 -> +-------------------------------------------------+
+         *                           |                                                 |
+         *                           |                                                 |
+         *                yDXFmin -> |                     o        o                  |
+         *                           |                                                 |
+         *                           |      o                                          |
+         *                           |                                          o      |
+         *                           |                                                 |
+         *                           |                                                 |
+         *                        -> |                      *                          |
+         *                           |                                                 |
+         *                           |                                                 |
+         *                           |         o                                       |
+         *                           |                                                 |
+         *                           |                                                 |  
+         *                yDXFmax -> |           o                                     | 
+         *                           |                                                 |
+         *                           |                                                 |
+         *  inputPlot.getHeight() -> +-------------------------------------------------+
+         */
+        
         BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics=image.getGraphics();
         
         graphics.setColor(Color.BLACK);
+        
         
         
         //graphics.fillOval(10,10,3,3);
@@ -1119,8 +1171,8 @@ public class modrilla extends javax.swing.JFrame {
     private double xMODmin=0.0;
     private double yMODmax=0.0;
     private double yMODmin=0.0;
-    private double holes=0;
-    private double hole=0;
+    private int holes=0;
+    private int hole=0;
     
     private int x=0;
     private int y=0;
