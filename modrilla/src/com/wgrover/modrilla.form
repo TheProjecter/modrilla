@@ -70,7 +70,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jTabbedPane1" alignment="0" pref="637" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane1" alignment="0" pref="668" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="previousButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="429" max="32767" attributes="0"/>
@@ -119,27 +119,27 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="setupLabel" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="setupLabel" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="outputFileFormatLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="outputFileFormatCombo" pref="518" max="32767" attributes="0"/>
+                              <Component id="outputFileFormatCombo" pref="484" max="32767" attributes="0"/>
                           </Group>
                           <Component id="aboutButton" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="unitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="unitsCombo" pref="513" max="32767" attributes="0"/>
+                              <Component id="unitsCombo" pref="476" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="millUnitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="millUnitsCombo" pref="564" max="32767" attributes="0"/>
+                              <Component id="millUnitsCombo" pref="539" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="alignmentModeLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="alignmentModeCombo" pref="528" max="32767" attributes="0"/>
+                              <Component id="alignmentModeCombo" pref="494" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -150,7 +150,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="setupLabel" pref="189" max="32767" attributes="0"/>
+                      <Component id="setupLabel" pref="121" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="alignmentModeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -276,25 +276,25 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel49" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jLabel49" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField1" pref="545" max="32767" attributes="0"/>
+                              <Component id="jTextField1" pref="504" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField2" pref="545" max="32767" attributes="0"/>
+                              <Component id="jTextField2" pref="504" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField3" pref="545" max="32767" attributes="0"/>
+                              <Component id="jTextField3" pref="504" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel48" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -307,7 +307,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel49" pref="244" max="32767" attributes="0"/>
+                      <Component id="jLabel49" pref="196" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -343,6 +343,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="45"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel41">
               <Properties>
@@ -350,6 +353,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="34"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel46">
               <Properties>
@@ -362,6 +368,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="23"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel48">
               <Properties>
@@ -391,18 +400,18 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel50" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jLabel50" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField4" pref="545" max="32767" attributes="0"/>
+                              <Component id="jTextField4" pref="504" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField5" pref="545" max="32767" attributes="0"/>
+                              <Component id="jTextField5" pref="504" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -415,7 +424,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel50" pref="270" max="32767" attributes="0"/>
+                      <Component id="jLabel50" pref="226" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -440,6 +449,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="87"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
@@ -457,6 +469,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="76"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel50">
               <Properties>
@@ -481,7 +496,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel51" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jLabel51" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -492,7 +507,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel51" pref="240" max="32767" attributes="0"/>
+                      <Component id="jLabel51" pref="198" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -519,14 +534,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xDXFa1Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="xDXFa1Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yDXFa1Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="yDXFa1Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -560,6 +575,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xDXFa1Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="67"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel15">
                   <Properties>
@@ -572,6 +590,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yDXFa1Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="99"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel17">
                   <Properties>
@@ -603,7 +624,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel52" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jLabel52" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
                           <Component id="jPanel10" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -615,7 +636,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel52" pref="158" max="32767" attributes="0"/>
+                      <Component id="jLabel52" pref="118" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -644,14 +665,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa1Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="xMODa1Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa1Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="yMODa1Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -685,6 +706,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xMODa1Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="100"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xMODa1FieldActionPerformed"/>
                   </Events>
@@ -700,6 +724,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yMODa1Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="200"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="yMODa1UnitsLabel">
                   <Properties>
@@ -726,14 +753,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa2Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="xMODa2Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa2Field" pref="509" max="32767" attributes="0"/>
+                                  <Component id="yMODa2Field" pref="452" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -767,6 +794,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xMODa2Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="500"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="xMODa2UnitsLabel">
                   <Properties>
@@ -779,6 +809,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yMODa2Field">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="500"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="yMODa2UnitsLabel">
                   <Properties>
@@ -813,45 +846,45 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="serialDeviceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="serialDeviceField" pref="528" max="32767" attributes="0"/>
+                              <Component id="serialDeviceField" pref="488" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="repeatsField" pref="520" max="32767" attributes="0"/>
+                              <Component id="repeatsField" pref="486" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedField" pref="539" max="32767" attributes="0"/>
+                              <Component id="zSpeedField" pref="502" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="peckDistanceField" pref="499" max="32767" attributes="0"/>
+                              <Component id="peckDistanceField" pref="446" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="overdrillField" pref="524" max="32767" attributes="0"/>
+                              <Component id="overdrillField" pref="478" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="waferThicknessField" pref="492" max="32767" attributes="0"/>
+                              <Component id="waferThicknessField" pref="433" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedField" pref="547" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedField" pref="515" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -861,7 +894,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="157" max="32767" attributes="0"/>
+                      <EmptySpace pref="104" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel40" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="zDrillSpeedField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1013,7 +1046,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane7" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jScrollPane7" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Component id="selectInputFileButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1027,7 +1060,7 @@
                       <Component id="selectInputFileButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                      <EmptySpace pref="187" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1075,13 +1108,13 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="inputPlot" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="inputPlot" alignment="0" pref="607" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="414" max="32767" attributes="0"/>
+                              <EmptySpace pref="372" max="32767" attributes="0"/>
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel54" alignment="0" pref="612" max="32767" attributes="0"/>
+                          <Component id="jLabel54" alignment="0" pref="607" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1093,7 +1126,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel54" min="-2" pref="42" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="inputPlot" pref="245" max="32767" attributes="0"/>
+                      <Component id="inputPlot" pref="203" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1125,6 +1158,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Plot output file"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel54">
               <Properties>
