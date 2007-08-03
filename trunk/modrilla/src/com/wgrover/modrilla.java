@@ -821,10 +821,27 @@ public class modrilla extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-// TODO add your handling code here:
-        
 
+        BufferedImage image2=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
+        Graphics graphics2=image2.getGraphics();
         
+        graphics2.setColor(Color.BLACK);
+        
+        for(int h=0; h<=holes;h++) {
+            
+            int xPlot=(int)(xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
+            int yPlot=(int)(yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
+                        
+            xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
+            yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
+            
+            //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
+                        
+            graphics2.fillOval( xPlot, yPlot, 5, 5 );
+        }
+        
+        graphics2.dispose();
+        inputPlot.setIcon(new ImageIcon(image2));
     }//GEN-LAST:event_jButton3ActionPerformed
     
     private void xMODa1FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMODa1FieldActionPerformed
@@ -1060,34 +1077,7 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_selectInputFileButtonActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-// TODO add your handling code here:
-        
-        /*
-         *   
-         *                           0   0.05*W                             xDXFmax  W=inputPlot.getWidth() 
-         *                           |      |               |                   |      |
-         *                           V      V               V                   V      V
-         *                      0 -> +-------------------------------------------------+
-         *                           |                                                 |
-         *                           |                                                 |
-         *                yDXFmin -> |                     o        o                  |
-         *                           |                                                 |
-         *                           |      o                                          |
-         *                           |                                          o      |
-         *                           |                                                 |
-         *                           |                                                 |
-         *                        -> |                      *                          |
-         *                           |                                                 |
-         *                           |                                                 |
-         *                           |         o                                       |
-         *                           |                                                 |
-         *                           |                                                 |  
-         *                yDXFmax -> |           o                                     | 
-         *                           |                                                 |
-         *                           |                                                 |
-         *  inputPlot.getHeight() -> +-------------------------------------------------+
-         */
-        
+
         BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics=image.getGraphics();
         
@@ -1096,18 +1086,17 @@ public class modrilla extends javax.swing.JFrame {
         for(int h=0; h<=holes;h++) {
             
             int xPlot=(int)(xDXFholes[h] - xDXFmin-0.05*(xDXFmin-xDXFmax));
-            int yPlot=(int)(yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
+            int yPlot=(int)(-yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
                         
             xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
             yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
             
-            System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
+            //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
                         
-            graphics.fillOval( xPlot, yPlot, 3, 3 );
+            graphics.fillOval( xPlot, yPlot, 5, 5 );
         }
         
         graphics.dispose();
-        
         inputPlot.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
     
