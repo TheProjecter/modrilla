@@ -52,8 +52,8 @@ public class modrilla extends javax.swing.JFrame {
         millUnitsCombo = new javax.swing.JComboBox();
         unitsLabel = new javax.swing.JLabel();
         unitsCombo = new javax.swing.JComboBox();
-        outputFileFormatLabel = new javax.swing.JLabel();
-        outputFileFormatCombo = new javax.swing.JComboBox();
+        outputLabel = new javax.swing.JLabel();
+        outputCombo = new javax.swing.JComboBox();
         aboutButton = new javax.swing.JButton();
         drillNickPanel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -177,9 +177,9 @@ public class modrilla extends javax.swing.JFrame {
 
         unitsCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Millimeters", "Microns", "Centimeters", "Inches", "Mils", "Steps" }));
 
-        outputFileFormatLabel.setText("Output file format:");
+        outputLabel.setText("Output file format:");
 
-        outputFileFormatCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "G-code", "Roland Modela" }));
+        outputCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "G-code", "Roland Modela" }));
 
         aboutButton.setText("About modrilla...");
         aboutButton.addActionListener(new java.awt.event.ActionListener() {
@@ -197,9 +197,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
-                        .add(outputFileFormatLabel)
+                        .add(outputLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(outputFileFormatCombo, 0, 216, Short.MAX_VALUE))
+                        .add(outputCombo, 0, 216, Short.MAX_VALUE))
                     .add(aboutButton)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
                         .add(unitsLabel)
@@ -234,8 +234,8 @@ public class modrilla extends javax.swing.JFrame {
                     .add(unitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(outputFileFormatLabel)
-                    .add(outputFileFormatCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(outputLabel)
+                    .add(outputCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(aboutButton)
                 .addContainerGap())
@@ -831,7 +831,7 @@ public class modrilla extends javax.swing.JFrame {
             
             int xPlot=(int)(xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
             int yPlot=(int)(yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
-                        
+
             xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
             yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
             
@@ -1254,8 +1254,8 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JComboBox millUnitsCombo;
     private javax.swing.JLabel millUnitsLabel;
     private javax.swing.JButton nextButton;
-    private javax.swing.JComboBox outputFileFormatCombo;
-    private javax.swing.JLabel outputFileFormatLabel;
+    private javax.swing.JComboBox outputCombo;
+    private javax.swing.JLabel outputLabel;
     private javax.swing.JTextField overdrillField;
     private javax.swing.JTextField peckDistanceField;
     private javax.swing.JButton previousButton;
