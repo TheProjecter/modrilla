@@ -55,6 +55,8 @@ public class modrilla extends javax.swing.JFrame {
         outputLabel = new javax.swing.JLabel();
         outputCombo = new javax.swing.JComboBox();
         aboutButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox();
         drillNickPanel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -111,13 +113,17 @@ public class modrilla extends javax.swing.JFrame {
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         zSpeedField = new javax.swing.JTextField();
-        jLabel37 = new javax.swing.JLabel();
+        zSpeedUnitsLabel = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         repeatsField = new javax.swing.JTextField();
         serialDeviceLabel = new javax.swing.JLabel();
         serialDeviceField = new javax.swing.JTextField();
         jLabel40 = new javax.swing.JLabel();
         zDrillSpeedField = new javax.swing.JTextField();
+        zDrillSpeedUnitsLabel = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        jPanel1 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         selectInputFileButton = new javax.swing.JButton();
         jScrollPane7 = new javax.swing.JScrollPane();
@@ -156,6 +162,12 @@ public class modrilla extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Modrilla");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
         jTabbedPane1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jTabbedPane1StateChanged(evt);
@@ -167,19 +179,34 @@ public class modrilla extends javax.swing.JFrame {
 
         alignmentModeLabel.setText("Alignment mode:");
 
-        alignmentModeCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Microscope alignment", "Drill bit alignment" }));
+        alignmentModeCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Drill bit alignment", "Microscope alignment" }));
+        alignmentModeCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alignmentModeComboActionPerformed(evt);
+            }
+        });
 
         millUnitsLabel.setText("Mill units:");
 
-        millUnitsCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Millimeters", "Microns", "Inches", "Mils" }));
+        millUnitsCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Millimeters", "Microns", "Inches", "Mils", "Modela units" }));
+        millUnitsCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                millUnitsComboActionPerformed(evt);
+            }
+        });
 
-        unitsLabel.setText("Input DXF file units:");
+        unitsLabel.setText("Input file units:");
 
-        unitsCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Millimeters", "Microns", "Centimeters", "Inches", "Mils", "Steps" }));
+        unitsCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Millimeters", "Microns", "Centimeters", "Inches", "Mils", "Mill units" }));
 
         outputLabel.setText("Output file format:");
 
         outputCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "G-code", "Roland Modela" }));
+        outputCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                outputComboActionPerformed(evt);
+            }
+        });
 
         aboutButton.setText("About modrilla...");
         aboutButton.addActionListener(new java.awt.event.ActionListener() {
@@ -188,28 +215,36 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Input file format:");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "DXF" }));
+
         org.jdesktop.layout.GroupLayout setupPanelLayout = new org.jdesktop.layout.GroupLayout(setupPanel);
         setupPanel.setLayout(setupPanelLayout);
         setupPanelLayout.setHorizontalGroup(
             setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, setupPanelLayout.createSequentialGroup()
+            .add(setupPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
+                .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                    .add(setupPanelLayout.createSequentialGroup()
                         .add(outputLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(outputCombo, 0, 216, Short.MAX_VALUE))
-                    .add(aboutButton)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, aboutButton)
+                    .add(setupPanelLayout.createSequentialGroup()
                         .add(unitsLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(unitsCombo, 0, 211, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
+                        .add(unitsCombo, 0, 233, Short.MAX_VALUE))
+                    .add(setupPanelLayout.createSequentialGroup()
+                        .add(jLabel1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jComboBox2, 0, 224, Short.MAX_VALUE))
+                    .add(setupPanelLayout.createSequentialGroup()
                         .add(millUnitsLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(millUnitsCombo, 0, 262, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, setupPanelLayout.createSequentialGroup()
+                    .add(setupPanelLayout.createSequentialGroup()
                         .add(alignmentModeLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(alignmentModeCombo, 0, 226, Short.MAX_VALUE)))
@@ -219,8 +254,8 @@ public class modrilla extends javax.swing.JFrame {
             setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, setupPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
+                .add(82, 82, 82)
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(alignmentModeLabel)
                     .add(alignmentModeCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -228,6 +263,10 @@ public class modrilla extends javax.swing.JFrame {
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(millUnitsLabel)
                     .add(millUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel1)
+                    .add(jComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(unitsLabel)
@@ -591,23 +630,36 @@ public class modrilla extends javax.swing.JFrame {
 
         jLabel35.setText("microns");
 
-        jLabel36.setText("Z speed:");
+        jLabel36.setText("Non-drilling Z speed:");
 
         zSpeedField.setText("0.01");
 
-        jLabel37.setText("units");
+        zSpeedUnitsLabel.setText("mm/min");
 
         jLabel38.setText("Repeats per peck:");
 
         repeatsField.setText("3");
 
         serialDeviceLabel.setText("Mill serial device:");
+        serialDeviceLabel.setEnabled(false);
 
         serialDeviceField.setText("/dev/ttyS0");
+        serialDeviceField.setEnabled(false);
 
         jLabel40.setText("Z drill speed:");
 
         zDrillSpeedField.setText("0.01");
+
+        zDrillSpeedUnitsLabel.setText("mm/min");
+
+        jLabel42.setText("Mill Z speed units:");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "mm/min", "Modrilla units" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout jPanel11Layout = new org.jdesktop.layout.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -627,9 +679,9 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel36)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+                        .add(zSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jLabel37))
+                        .add(zSpeedUnitsLabel))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel34)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -649,17 +701,28 @@ public class modrilla extends javax.swing.JFrame {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel31))
                     .add(jPanel11Layout.createSequentialGroup()
+                        .add(jLabel42)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jComboBox1, 0, 221, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel40)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)))
+                        .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(zDrillSpeedUnitsLabel)))
                 .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(141, Short.MAX_VALUE)
+                .addContainerGap(115, Short.MAX_VALUE)
+                .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel42)
+                    .add(jComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel40)
+                    .add(zDrillSpeedUnitsLabel)
                     .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
@@ -679,7 +742,7 @@ public class modrilla extends javax.swing.JFrame {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel36)
-                    .add(jLabel37)
+                    .add(zSpeedUnitsLabel)
                     .add(zSpeedField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
@@ -692,6 +755,18 @@ public class modrilla extends javax.swing.JFrame {
                 .addContainerGap())
         );
         jTabbedPane1.addTab("Options", jPanel11);
+
+        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 330, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 328, Short.MAX_VALUE)
+        );
+        jTabbedPane1.addTab("Drill nick", jPanel1);
 
         selectInputFileButton.setText("Select DXF file...");
         selectInputFileButton.addActionListener(new java.awt.event.ActionListener() {
@@ -819,9 +894,56 @@ public class modrilla extends javax.swing.JFrame {
         );
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+// TODO add your handling code here:
+        jTabbedPane1.setEnabledAt(1,false);
+        jTabbedPane1.setEnabledAt(2,false);
+    }//GEN-LAST:event_formWindowOpened
+    
+    private void alignmentModeComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alignmentModeComboActionPerformed
+// TODO add your handling code here:
+        if(alignmentModeCombo.getSelectedItem()=="Drill bit alignment") {
+            jTabbedPane1.setEnabledAt(1,false);
+            jTabbedPane1.setEnabledAt(2,false);
+            jTabbedPane1.setEnabledAt(6,true);
+        } else if(alignmentModeCombo.getSelectedItem()=="Microscope alignment") {
+            jTabbedPane1.setEnabledAt(1,true);
+            jTabbedPane1.setEnabledAt(2,true);
+            jTabbedPane1.setEnabledAt(6,false);
+        }
+    }//GEN-LAST:event_alignmentModeComboActionPerformed
+    
+    private void millUnitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_millUnitsComboActionPerformed
+// TODO add your handling code here:
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_millUnitsComboActionPerformed
+    
+    private void outputComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputComboActionPerformed
+// TODO add your handling code here:
+        if(outputCombo.getSelectedItem()=="G-code") {
+            serialDeviceLabel.setEnabled(false);
+            serialDeviceField.setEnabled(false);
+        } else if(outputCombo.getSelectedItem()=="Roland Modela") {
+            serialDeviceField.setEnabled(true);
+            serialDeviceField.setEnabled(true);
+        }
+    }//GEN-LAST:event_outputComboActionPerformed
+    
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+// TODO add your handling code here:
+        
+        zDrillSpeedUnitsLabel.setText(jComboBox1.getSelectedItem().toString());
+        zSpeedUnitsLabel.setText(jComboBox1.getSelectedItem().toString());
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
+        
         BufferedImage image2=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics2=image2.getGraphics();
         
@@ -831,12 +953,12 @@ public class modrilla extends javax.swing.JFrame {
             
             int xPlot=(int)(xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
             int yPlot=(int)(yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
-
+            
             xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
             yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
             
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
-                        
+            
             graphics2.fillOval( xPlot, yPlot, 5, 5 );
         }
         
@@ -875,34 +997,81 @@ public class modrilla extends javax.swing.JFrame {
         
         
         
-        // define scaleFactor
+        // define scaleFactor initially in terms of Modela units
         double scaleFactor=1;
-        if(unitsCombo.getSelectedItem()=="Steps")
+        if(unitsCombo.getSelectedItem()=="Mill units") {
             scaleFactor = 1;
-        else if(unitsCombo.getSelectedItem()=="Mils")
+        } else if(unitsCombo.getSelectedItem()=="Mils") {
             scaleFactor = 0.984;
-        else if(unitsCombo.getSelectedItem()=="Inches")
+        } else if(unitsCombo.getSelectedItem()=="Inches") {
             scaleFactor = 0.000984;
-        else if(unitsCombo.getSelectedItem()=="Millimeters")
+        } else if(unitsCombo.getSelectedItem()=="Millimeters") {
             scaleFactor = 0.025;
-        else if(unitsCombo.getSelectedItem()=="Microns")
+        } else if(unitsCombo.getSelectedItem()=="Microns") {
             scaleFactor = 25.0;
-        else if(unitsCombo.getSelectedItem()=="Centimeters")
+        } else if(unitsCombo.getSelectedItem()=="Centimeters") {
             scaleFactor = 0.0025;
+        }
+        
+        // if necessary, now convert from Modela units to Mill units
+        if(millUnitsCombo.getSelectedItem()=="Modela units") {
+            ;  //do nothing; scaleFactor is already in Modela units
+        } else if(millUnitsCombo.getSelectedItem()=="Mils") {
+            scaleFactor=0.984/scaleFactor;
+        } else if(millUnitsCombo.getSelectedItem()=="Inches") {
+            scaleFactor=0.000984/scaleFactor;
+        } else if(millUnitsCombo.getSelectedItem()=="Millimeters") {
+            scaleFactor=0.025/scaleFactor;
+        } else if(millUnitsCombo.getSelectedItem()=="Microns") {
+            scaleFactor=25.0/scaleFactor;
+        } else if(millUnitsCombo.getSelectedItem()=="Centimeters") {
+            scaleFactor=0.0025/scaleFactor;
+        }
+        
         
         //DXF coords are divided by scaleFactor
         double xDXFa1=Double.parseDouble(xDXFa1Field.getText())/scaleFactor;
         double yDXFa1=Double.parseDouble(yDXFa1Field.getText())/scaleFactor;
-        //Coords from Modela are not scaled
+        //Coords from Mill are not scaled
         double xMODa1=Double.parseDouble(xMODa1Field.getText());
         double yMODa1=Double.parseDouble(yMODa1Field.getText());
         double xMODa2=Double.parseDouble(xMODa2Field.getText());
         double yMODa2=Double.parseDouble(yMODa2Field.getText());
+        
         //Scale these as microns
-        double waferThickness=Double.parseDouble(waferThicknessField.getText())/25.0;
-        double overdrill=Double.parseDouble(overdrillField.getText())/25.0;
-        double peckDistance=Double.parseDouble(peckDistanceField.getText())/25.0;
-        //speeds aren't scaled
+        //double waferThickness=Double.parseDouble(waferThicknessField.getText())/25.0;
+        //double overdrill=Double.parseDouble(overdrillField.getText())/25.0;
+        //double peckDistance=Double.parseDouble(peckDistanceField.getText())/25.0;
+        double waferThickness=0.0;
+        double overdrill=0.0;
+        double peckDistance=0.0;
+        if(millUnitsCombo.getSelectedItem()=="Modela units") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText())/25.0;
+            overdrill=Double.parseDouble(overdrillField.getText())/25.0;
+            peckDistance=Double.parseDouble(peckDistanceField.getText())/25.0;
+        } else if(millUnitsCombo.getSelectedItem()=="Mils") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText())/25.4;
+            overdrill=Double.parseDouble(overdrillField.getText())/25.4;
+            peckDistance=Double.parseDouble(peckDistanceField.getText())/25.4;
+        } else if(millUnitsCombo.getSelectedItem()=="Inches") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText())/25400;
+            overdrill=Double.parseDouble(overdrillField.getText())/25400;
+            peckDistance=Double.parseDouble(peckDistanceField.getText())/25400;
+        } else if(millUnitsCombo.getSelectedItem()=="Millimeters") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText())/1000.0;
+            overdrill=Double.parseDouble(overdrillField.getText())/1000.0;
+            peckDistance=Double.parseDouble(peckDistanceField.getText())/1000.0;
+        } else if(millUnitsCombo.getSelectedItem()=="Microns") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText());
+            overdrill=Double.parseDouble(overdrillField.getText());
+            peckDistance=Double.parseDouble(peckDistanceField.getText());
+        } else if(millUnitsCombo.getSelectedItem()=="Centimeters") {
+            waferThickness=Double.parseDouble(waferThicknessField.getText())/10000.0;
+            overdrill=Double.parseDouble(overdrillField.getText())/10000.0;
+            peckDistance=Double.parseDouble(peckDistanceField.getText())/10000.0;
+        }
+        
+        //speeds aren't scaled! assume mm/min for mill or mill units for modela
         double zSpeed=Double.parseDouble(zSpeedField.getText());
         double zDrillSpeed=Double.parseDouble(zDrillSpeedField.getText());
         
@@ -920,18 +1089,50 @@ public class modrilla extends javax.swing.JFrame {
             BufferedReader in=new BufferedReader(fr);
             BufferedWriter out = new BufferedWriter(new FileWriter(infile.getParent()+File.separator+infile.getName()+".sh"));
             
-            //HEADER
-            //make this a shell script
-            out.write("#!/bin/sh\n");
+            // START OF PREAMBLE
+            
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                //make this a shell script
+                out.write("#!/bin/sh\n");
+            }
+            
             //info lines
-            out.write("echo 'Running "+infile.getName()+".sh'\n");
+            
             Date d = new Date();
-            out.write("echo 'generated "+d+" by modrilla v0.3'\n");
-            //stty command
-            out.write("stty 9600 raw -echo crtscts <"+serialDeviceField.getText()+"\n");
-            //head down (z during PD) = 0 (at the top of the wafer)
-            //head up (z during PU) = 500 (500 units above the top of the wafer)
-            out.write("echo '!PZ0,500;!MC1;' > "+serialDeviceField.getText()+"\n");
+            
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                out.write("echo 'Running "+infile.getName()+".sh'\n");
+                out.write("echo 'Generated "+d+" by Modrilla v2.0 by Will Grover'\n");
+                out.write("echo 'http://wgrover.com/modrilla'\n");
+            }
+            
+            if(outputCombo.getSelectedItem()=="G-code") {
+                out.write("(Prepared from "+infile.getName()+")\n");
+                out.write("(Generated "+d+" by Modrilla v2.0 by Will Grover)\n");
+                out.write("(http://wgrover.com/modrilla)\n");
+            }
+            
+            //stty command for Modela
+            
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                out.write("stty 9600 raw -echo crtscts <"+serialDeviceField.getText()+"\n");
+            }
+            
+            //head up and head down heights for Modela
+            
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                //head down (z during PD) = 0 (at the top of the wafer)
+                //head up (z during PU) = 500 (500 units above the top of the wafer)
+                out.write("echo '!PZ0,500;!MC1;' > "+serialDeviceField.getText()+"\n");
+            }
+            
+            //drilling feed rate for G-code
+            
+            if(outputCombo.getSelectedItem()=="G-code") {
+                out.write("F"+zDrillSpeedField.getText()+"\n");
+            }
+            
+            // END OF PREAMBLE
             
             String line;
             int circles=0;
@@ -987,12 +1188,19 @@ public class modrilla extends javax.swing.JFrame {
                         if(yMOD>yMODmax) {yMODmax=yMOD;}
                         if(yMOD<yMODmin) {yMODmin=yMOD;}
                     }
-                                
+                    
                     
                     
                     
                     //report that we're drilling a hole at (xMOD,yMOD)
-                    out.write("\necho 'Drilling hole "+circles+" at ("+(int)xMOD+","+(int)yMOD+")'\n");
+                    
+                    if(outputCombo.getSelectedItem()=="Roland Modela") {
+                        out.write("\necho 'Drilling hole "+circles+" at ("+(int)xMOD+","+(int)yMOD+")'\n");
+                    }
+                    
+                    if(outputCombo.getSelectedItem()=="G-code") {
+                        ;       //can we put a (parenthetical comment) here?
+                    }
                     
                     //consistent screw loading: move first to (xMOD-100,yMOD-100) absolute, head up
                     double xMODapproach=xMOD-100;
@@ -1077,7 +1285,7 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_selectInputFileButtonActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        
         BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
         Graphics graphics=image.getGraphics();
         
@@ -1087,12 +1295,12 @@ public class modrilla extends javax.swing.JFrame {
             
             int xPlot=(int)(xDXFholes[h] - xDXFmin-0.05*(xDXFmin-xDXFmax));
             int yPlot=(int)(-yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
-                        
+            
             xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
             yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
             
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
-                        
+            
             graphics.fillOval( xPlot, yPlot, 5, 5 );
         }
         
@@ -1119,6 +1327,9 @@ public class modrilla extends javax.swing.JFrame {
         if(jTabbedPane1.getSelectedIndex()>0) {
             jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()-1);
         }
+                while(!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()-1);
+        }
         if(jTabbedPane1.getSelectedIndex()==0) {
             previousButton.setEnabled(false);
         } else {
@@ -1134,6 +1345,9 @@ public class modrilla extends javax.swing.JFrame {
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
 // TODO add your handling code here:
         if(jTabbedPane1.getSelectedIndex()<jTabbedPane1.getComponentCount()-1) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()+1);
+        }
+        while(!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
             jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()+1);
         }
         if(jTabbedPane1.getSelectedIndex()==0) {
@@ -1152,6 +1366,7 @@ public class modrilla extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new modrilla().setVisible(true);
@@ -1205,7 +1420,10 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JLabel inputPlot;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBox2;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1221,10 +1439,10 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
@@ -1235,6 +1453,7 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -1283,7 +1502,9 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JLabel yMODa2Label;
     private javax.swing.JLabel yMODa2UnitsLabel;
     private javax.swing.JTextField zDrillSpeedField;
+    private javax.swing.JLabel zDrillSpeedUnitsLabel;
     private javax.swing.JTextField zSpeedField;
+    private javax.swing.JLabel zSpeedUnitsLabel;
     // End of variables declaration//GEN-END:variables
     
 }
