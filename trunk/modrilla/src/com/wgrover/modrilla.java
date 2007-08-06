@@ -1323,7 +1323,7 @@ public class modrilla extends javax.swing.JFrame {
             xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
             yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
             
-            System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
+            //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
             
             graphics.fillOval( xPlot, yPlot, 5, 5 );
         }
