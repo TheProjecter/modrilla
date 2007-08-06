@@ -50,7 +50,7 @@ public class modrilla extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox();
+        speedCombo = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -207,14 +207,20 @@ public class modrilla extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         joggerDialog.getContentPane().add(jButton6, gridBagConstraints);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Slow", "Fast" }));
+        speedCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Slow", "Fast" }));
+        speedCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                speedComboActionPerformed(evt);
+            }
+        });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 10, 0);
-        joggerDialog.getContentPane().add(jComboBox1, gridBagConstraints);
+        joggerDialog.getContentPane().add(speedCombo, gridBagConstraints);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Jog speed:");
@@ -1019,6 +1025,10 @@ public class modrilla extends javax.swing.JFrame {
         );
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void speedComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speedComboActionPerformed
+// TODO add your handling code here:
+    }//GEN-LAST:event_speedComboActionPerformed
     
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
 // TODO add your handling code here:
@@ -1583,7 +1593,6 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel1;
@@ -1655,6 +1664,7 @@ public class modrilla extends javax.swing.JFrame {
     private javax.swing.JLabel serialDeviceLabel;
     private javax.swing.JLabel setupLabel;
     private javax.swing.JPanel setupPanel;
+    private javax.swing.JComboBox speedCombo;
     private javax.swing.JComboBox unitsCombo;
     private javax.swing.JLabel unitsLabel;
     private javax.swing.JTextField waferThicknessField;
