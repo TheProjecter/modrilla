@@ -24,14 +24,14 @@ import javax.swing.JTabbedPane;
  * @author  wgrover
  */
 public class modrilla extends javax.swing.JFrame {
-
+    
     /** Creates new form modrilla */
     public modrilla() {
         initComponents();
         previousButton.setEnabled(false);
         nextButton.setEnabled(true);
     }
-
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -189,16 +189,16 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jScrollPane8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
                 .addContainerGap())
         );
-
-        joggerDialog.setAlwaysOnTop(true);
         joggerDialog.getContentPane().setLayout(new java.awt.GridBagLayout());
 
+        joggerDialog.setAlwaysOnTop(true);
         minusYButton.setText("\u2193");
         minusYButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 minusYButtonActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -212,6 +212,7 @@ public class modrilla extends javax.swing.JFrame {
                 minusXButtonActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -224,6 +225,7 @@ public class modrilla extends javax.swing.JFrame {
                 plusXButtonActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 4;
@@ -236,6 +238,7 @@ public class modrilla extends javax.swing.JFrame {
                 plusYButtonActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -248,6 +251,7 @@ public class modrilla extends javax.swing.JFrame {
                 speedComboActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -427,7 +431,6 @@ public class modrilla extends javax.swing.JFrame {
                 .add(aboutButton)
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Setup", setupPanel);
 
         millUnitsLabel.setText("Mill units:");
@@ -439,15 +442,16 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Mill axis orientation"));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Mill axis orientation"));
         leftSignCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "+", "-" }));
         leftSignCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 leftSignComboActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -461,6 +465,7 @@ public class modrilla extends javax.swing.JFrame {
                 frontSignComboActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -474,6 +479,7 @@ public class modrilla extends javax.swing.JFrame {
                 backSignComboActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -487,6 +493,7 @@ public class modrilla extends javax.swing.JFrame {
                 rightSignComboActionPerformed(evt);
             }
         });
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 6;
@@ -555,12 +562,10 @@ public class modrilla extends javax.swing.JFrame {
         millSetupPanelLayout.setHorizontalGroup(
             millSetupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millSetupPanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .add(millSetupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, millSetupPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, millSetupPanelLayout.createSequentialGroup()
-                        .addContainerGap()
                         .add(millUnitsLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(millUnitsCombo, 0, 272, Short.MAX_VALUE)))
@@ -577,7 +582,6 @@ public class modrilla extends javax.swing.JFrame {
                     .add(millUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Mill setup", millSetupPanel);
 
         jLabel8.setText("Z:");
@@ -651,7 +655,6 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Drill nick", drillNickPanel);
 
         jLabel10.setText("X:");
@@ -708,11 +711,9 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Align nick", alignToNickPanel);
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("First alignment mark"));
-
         jLabel14.setText("X:");
 
         xDXFa1Field.setText("67");
@@ -783,11 +784,9 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("DXF marks", DXFmarksPanel);
 
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder("First alignment mark"));
-
         xMODa1Label.setText("X:");
 
         xMODa1Field.setText("100");
@@ -841,7 +840,6 @@ public class modrilla extends javax.swing.JFrame {
         );
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder("Second alignment mark"));
-
         xMODa2Label.setText("X:");
 
         xMODa2Field.setText("500");
@@ -915,7 +913,6 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jPanel10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Mill marks", millMarksPanel);
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
@@ -928,7 +925,6 @@ public class modrilla extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(0, 440, Short.MAX_VALUE)
         );
-
         jTabbedPane1.addTab("Drill nick", jPanel1);
 
         jLabel30.setText("Glass thickness:");
@@ -1073,7 +1069,6 @@ public class modrilla extends javax.swing.JFrame {
                     .add(serialDeviceField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Options", jPanel11);
 
         selectInputFileButton.setText("Select DXF file...");
@@ -1109,7 +1104,6 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(304, Short.MAX_VALUE))
         );
-
         jTabbedPane1.addTab("Input file", jPanel13);
 
         inputPlot.setBackground(new java.awt.Color(255, 255, 255));
@@ -1160,7 +1154,6 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jButton3))
                 .addContainerGap())
         );
-
         jTabbedPane1.addTab("Plot", jPanel12);
 
         nextButton.setText("Next  step \u2192");
@@ -1202,19 +1195,18 @@ public class modrilla extends javax.swing.JFrame {
                     .add(nextButton))
                 .addContainerGap())
         );
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void frontSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frontSignComboActionPerformed
-    if (frontSignCombo.getSelectedItem() == "+") {
-        backSignCombo.setSelectedItem("-");
-    }
-    if (frontSignCombo.getSelectedItem() == "-") {
-        backSignCombo.setSelectedItem("+");
-    }
+        if (frontSignCombo.getSelectedItem() == "+") {
+            backSignCombo.setSelectedItem("-");
+        }
+        if (frontSignCombo.getSelectedItem() == "-") {
+            backSignCombo.setSelectedItem("+");
+        }
 }//GEN-LAST:event_frontSignComboActionPerformed
-
+    
 private void backSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backSignComboActionPerformed
     if (backSignCombo.getSelectedItem() == "+") {
         frontSignCombo.setSelectedItem("-");
@@ -1312,23 +1304,23 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
 // TODO add your handling code here:
-
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
         // general startup code:
-
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
         jTabbedPane1.setEnabledAt(2, false);
         jTabbedPane1.setEnabledAt(3, false);
         joggerDialog.setSize(275, 225);
@@ -1365,7 +1357,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             zDrillSpeedUnitsCombo.setSelectedItem("mm/min");
             fooLabel.setEnabled(true);
             joggerDialog.setVisible(false);
-
+            
             frontSignCombo.setEnabled(true);
             backSignCombo.setEnabled(true);
             rightSignCombo.setEnabled(true);
@@ -1380,7 +1372,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             zDrillSpeedUnitsCombo.setEnabled(false);
             fooLabel.setEnabled(false);
             joggerDialog.setVisible(true);
-
+            
             frontSignCombo.setEnabled(false);
             backSignCombo.setEnabled(false);
             rightSignCombo.setEnabled(false);
@@ -1399,24 +1391,24 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     }//GEN-LAST:event_zDrillSpeedUnitsComboActionPerformed
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
+        
         BufferedImage image2 = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
         Graphics graphics2 = image2.getGraphics();
-
+        
         graphics2.setColor(Color.BLACK);
-
+        
         for (int h = 0; h <= holes; h++) {
-
+            
             int xPlot = (int) (xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
             int yPlot = (int) (yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
-
+            
             xPlot = (int) (xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
             yPlot = (int) (yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
-
+            
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
             graphics2.fillOval(xPlot, yPlot, 5, 5);
         }
-
+        
         graphics2.dispose();
         inputPlot.setIcon(new ImageIcon(image2));
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -1677,107 +1669,135 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     double xMODapproach=xMOD-offset;
                     double yMODapproach=yMOD-offset;
                     
+                    // move to approach
                     if(outputCombo.getSelectedItem()=="Roland Modela") {
                         out.write("echo 'PA;PU"+(int)xMODapproach+","+(int)yMODapproach+";' > "+serialDeviceField.getText()+"\n");
-                    } 
-                        //now move to (xMOD,yMOD) absolute, head up
-                        if(outputCombo.getSelectedItem()=="Roland Modela") {
-                            out.write("echo 'PA;PU"+(int)xMOD+","+(int)yMOD+";' > "+serialDeviceField.getText()+"\n");
-                        }
-                        
-                        //drill by pecking, using RELATIVE coordinates in Z dimension
-                        //lower quickly to wafer surface
+                    }
+                    if(outputCombo.getSelectedItem()=="G-code") {
+                        out.write("G00 X"+xMODapproach+" Y"+yMODapproach+"\n");
+                    }
+                    
+                    //now move to (xMOD,yMOD) absolute, head up
+                    if(outputCombo.getSelectedItem()=="Roland Modela") {
+                        out.write("echo 'PA;PU"+(int)xMOD+","+(int)yMOD+";' > "+serialDeviceField.getText()+"\n");
+                    }
+                    if(outputCombo.getSelectedItem()=="G-code") {
+                        out.write("G00 X"+xMOD+" Y"+yMOD+"\n");
+                    }
+                    
+                    //drill by pecking, using RELATIVE coordinates in Z dimension
+                    //lower quickly to wafer surface
+                    if(outputCombo.getSelectedItem()=="Roland Modela") {
                         out.write("echo 'PR;PD;' > "+serialDeviceField.getText()+"\n");
-                        double depth=0;
-                        while(depth<waferThickness+overdrill) {
+                    }
+                    double depth=0;
+                    if(outputCombo.getSelectedItem()=="Roland Modela") {
+                        depth=0;
+                    }
+                    if(outputCombo.getSelectedItem()=="G-code") {
+                        depth=0;  //FIXME replace with height of wafer surface
+                    }
+                    
+                    while(depth<waferThickness+overdrill) {
+                        
+                        int repeat=0;
+                        
+                        while(repeat<repeats) {
                             
-                            int repeat=0;
+                            out.write("echo 'PR;");
                             
-                            while(repeat<repeats) {
-                                
-                                out.write("echo 'PR;");
-                                
-                                //lower quickly to previous drilled depth
+                            //lower quickly to previous drilled depth
+                            if(outputCombo.getSelectedItem()=="Roland Modela") {
                                 out.write("!VZ"+zSpeed+";");
                                 out.write("!ZM-"+(int)depth+";");
-                                
-                                //lower slowly one additional peck
+                            }
+                            if(outputCombo.getSelectedItem()=="G-code") {
+                                out.write("G00 Z"+depth+"\n");
+                            }
+                            
+                            //lower slowly one additional peck
+                            if(outputCombo.getSelectedItem()=="Roland Modela") {
                                 out.write("!VZ"+zDrillSpeed+";");
                                 out.write("!ZM-"+(int)peckDistance+";");
-                                
-                                //raise quickly to wafer surface
-                                out.write("!VZ"+zSpeed+";");
-                                out.write("!ZM"+(int)peckDistance+";");
-                                out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
-                                
-                                //record new peck repeat
-                                repeat=repeat+1;
                             }
-                            //record new depth
-                            depth=depth+peckDistance;
+                            if(outputCombo.getSelectedItem()=="G-code") {
+                                double newDepth=depth+peckDistance;   //FIXME this assumes adding depth = further down into glass, may not be true
+                                out.write("G01 Z"+newDepth+"\n");
+                            }
+                            
+                            //raise quickly to wafer surface
+                            out.write("!VZ"+zSpeed+";");
+                            out.write("!ZM"+(int)peckDistance+";");
+                            out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
+                            
+                            //record new peck repeat
+                            repeat=repeat+1;
                         }
-                        
-                        //raise head to PU position before going to next hole
-                        //I don't think this is doing anything...
-                        //out.write("PU;");
-                        
-                        //last thing, return to scanmode 0
-                        scanmode=0;
-                    } else if(line.contains("CIRCLE")&&scanmode==0) {
-                        scanmode=1; ++circles;
-                    } else if(line.contains(" 10")&&scanmode==1) {
-                        scanmode=2;
-                    } else if(line.contains(" 20")&&scanmode==3) {
-                        scanmode=4;
+                        //record new depth
+                        depth=depth+peckDistance;
                     }
+                    
+                    //raise head to PU position before going to next hole
+                    //I don't think this is doing anything...
+                    //out.write("PU;");
+                    
+                    //last thing, return to scanmode 0
+                    scanmode=0;
+                } else if(line.contains("CIRCLE")&&scanmode==0) {
+                    scanmode=1; ++circles;
+                } else if(line.contains(" 10")&&scanmode==1) {
+                    scanmode=2;
+                } else if(line.contains(" 20")&&scanmode==3) {
+                    scanmode=4;
                 }
-                //graceful shutdown
-                out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
-                
-                //statusLabel.setText("Converted "+circles+" holes");
-                
-                out.close();
-            } catch (IOException ioe) {}
+            }
+            //graceful shutdown
+            out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
             
+            //statusLabel.setText("Converted "+circles+" holes");
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            // BIG PASTE ENDS HERE
-            
-            
-    }//GEN-LAST:event_selectInputFileButtonActionPerformed
+            out.close();
+        } catch (IOException ioe) {}
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // BIG PASTE ENDS HERE
+        
+        
+    }//GEN-LAST:event_selectInputFileButtonActionPerformed
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        
         BufferedImage image = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
         Graphics graphics = image.getGraphics();
-
+        
         graphics.setColor(Color.BLACK);
-
+        
         for (int h = 0; h <= holes; h++) {
-
+            
             int xPlot = (int) (xDXFholes[h] - xDXFmin-0.05*(xDXFmin-xDXFmax));
             int yPlot = (int) (yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
-
+            
             xPlot = (int) (xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
             yPlot = (int) (yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
-
+            
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
             graphics.fillOval(xPlot, yPlot, 5, 5);
         }
-
+        
         graphics.dispose();
         inputPlot.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -2012,4 +2032,4 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel zSpeedUnitsLabel;
     // End of variables declaration//GEN-END:variables
     
-    }
+}
