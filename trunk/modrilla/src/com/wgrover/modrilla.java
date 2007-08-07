@@ -24,14 +24,14 @@ import javax.swing.JTabbedPane;
  * @author  wgrover
  */
 public class modrilla extends javax.swing.JFrame {
-    
+
     /** Creates new form modrilla */
     public modrilla() {
         initComponents();
         previousButton.setEnabled(false);
         nextButton.setEnabled(true);
     }
-    
+
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -1206,84 +1206,104 @@ public class modrilla extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-private void frontSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frontSignComboActionPerformed
-    if(frontSignCombo.getSelectedItem()=="+") { backSignCombo.setSelectedItem("-"); }
-    if(frontSignCombo.getSelectedItem()=="-") { backSignCombo.setSelectedItem("+"); }
+    private void frontSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frontSignComboActionPerformed
+    if (frontSignCombo.getSelectedItem() == "+") {
+        backSignCombo.setSelectedItem("-");
+    }
+    if (frontSignCombo.getSelectedItem() == "-") {
+        backSignCombo.setSelectedItem("+");
+    }
 }//GEN-LAST:event_frontSignComboActionPerformed
 
 private void backSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backSignComboActionPerformed
-    if(backSignCombo.getSelectedItem()=="+") { frontSignCombo.setSelectedItem("-"); }
-    if(backSignCombo.getSelectedItem()=="-") { frontSignCombo.setSelectedItem("+"); }
+    if (backSignCombo.getSelectedItem() == "+") {
+        frontSignCombo.setSelectedItem("-");
+    }
+    if (backSignCombo.getSelectedItem() == "-") {
+        frontSignCombo.setSelectedItem("+");
+    }
 }//GEN-LAST:event_backSignComboActionPerformed
 
 private void leftSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftSignComboActionPerformed
-    if(leftSignCombo.getSelectedItem()=="+") { rightSignCombo.setSelectedItem("-"); }
-    if(leftSignCombo.getSelectedItem()=="-") { rightSignCombo.setSelectedItem("+"); }
+    if (leftSignCombo.getSelectedItem() == "+") {
+        rightSignCombo.setSelectedItem("-");
+    }
+    if (leftSignCombo.getSelectedItem() == "-") {
+        rightSignCombo.setSelectedItem("+");
+    }
 }//GEN-LAST:event_leftSignComboActionPerformed
 
 private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightSignComboActionPerformed
-    if(rightSignCombo.getSelectedItem()=="+") { leftSignCombo.setSelectedItem("-"); }
-    if(rightSignCombo.getSelectedItem()=="-") { leftSignCombo.setSelectedItem("+"); }
+    if (rightSignCombo.getSelectedItem() == "+") {
+        leftSignCombo.setSelectedItem("-");
+    }
+    if (rightSignCombo.getSelectedItem() == "-") {
+        leftSignCombo.setSelectedItem("+");
+    }
 }//GEN-LAST:event_rightSignComboActionPerformed
-    
+
     private void minusYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusYButtonActionPerformed
 // TODO add your handling code here:
         try {
-            if(speedCombo.getSelectedItem() == "Slow") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD0,-5;' > "+serialDeviceField.getText()});
-                y=y-5;
-            } else if(speedCombo.getSelectedItem() == "Fast") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD0,-100;' > "+serialDeviceField.getText()});
-                y=y-100;
+            if (speedCombo.getSelectedItem() == "Slow") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,-5;' > " + serialDeviceField.getText()});
+                y = y - 5;
+            } else if (speedCombo.getSelectedItem() == "Fast") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,-100;' > " + serialDeviceField.getText()});
+                y = y - 100;
             }
             xLabel.setText(Integer.toString(x));
             yLabel.setText(Integer.toString(y));
-        } catch (IOException e1) {}
+        } catch (IOException e1) {
+        }
     }//GEN-LAST:event_minusYButtonActionPerformed
     
     private void plusYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusYButtonActionPerformed
 // TODO add your handling code here:
         try {
-            if(speedCombo.getSelectedItem() == "Slow") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD0,5;' > "+serialDeviceField.getText()});
-                y=y+5;
-            } else if(speedCombo.getSelectedItem() == "Fast") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD0,100;' > "+serialDeviceField.getText()});
-                y=y+100;
+            if (speedCombo.getSelectedItem() == "Slow") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,5;' > " + serialDeviceField.getText()});
+                y = y + 5;
+            } else if (speedCombo.getSelectedItem() == "Fast") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,100;' > " + serialDeviceField.getText()});
+                y = y + 100;
             }
             xLabel.setText(Integer.toString(x));
             yLabel.setText(Integer.toString(y));
-        } catch (IOException e1) {}
+        } catch (IOException e1) {
+        }
     }//GEN-LAST:event_plusYButtonActionPerformed
     
     private void minusXButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusXButtonActionPerformed
 // TODO add your handling code here:
         try {
-            if(speedCombo.getSelectedItem() == "Slow") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD-5,0;' > "+serialDeviceField.getText()});
-                x=x-5;
-            } else if(speedCombo.getSelectedItem() == "Fast") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD-100,0;' > "+serialDeviceField.getText()});
-                x=x-100;
+            if (speedCombo.getSelectedItem() == "Slow") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD-5,0;' > " + serialDeviceField.getText()});
+                x = x - 5;
+            } else if (speedCombo.getSelectedItem() == "Fast") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD-100,0;' > " + serialDeviceField.getText()});
+                x = x - 100;
             }
             xLabel.setText(Integer.toString(x));
             yLabel.setText(Integer.toString(y));
-        } catch (IOException e1) {}
+        } catch (IOException e1) {
+        }
     }//GEN-LAST:event_minusXButtonActionPerformed
     
     private void plusXButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusXButtonActionPerformed
 // TODO add your handling code here:
         try {
-            if(speedCombo.getSelectedItem() == "Slow") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD5,0;' > "+serialDeviceField.getText()});
-                x=x+5;
-            } else if(speedCombo.getSelectedItem() == "Fast") {
-                Runtime.getRuntime().exec(new String[]{"/bin/sh","-c","echo '!PZ0,500;!MC0;PR;PD100,0;' > "+serialDeviceField.getText()});
-                x=x+100;
+            if (speedCombo.getSelectedItem() == "Slow") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD5,0;' > " + serialDeviceField.getText()});
+                x = x + 5;
+            } else if (speedCombo.getSelectedItem() == "Fast") {
+                Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD100,0;' > " + serialDeviceField.getText()});
+                x = x + 100;
             }
             xLabel.setText(Integer.toString(x));
             yLabel.setText(Integer.toString(y));
-        } catch (IOException e1) {}
+        } catch (IOException e1) {
+        }
     }//GEN-LAST:event_plusXButtonActionPerformed
     
     private void speedComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speedComboActionPerformed
@@ -1292,28 +1312,26 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
 // TODO add your handling code here:
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         // general startup code:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        jTabbedPane1.setEnabledAt(2,false);
-        jTabbedPane1.setEnabledAt(3,false);
-        joggerDialog.setSize(275,225);
+
+
+
+
+
+
+
+
+        jTabbedPane1.setEnabledAt(2, false);
+        jTabbedPane1.setEnabledAt(3, false);
+        joggerDialog.setSize(275, 225);
         joggerDialog.setTitle("Modela jogger");
         leftSignCombo.setSelectedItem("-");
         frontSignCombo.setSelectedItem("-");
@@ -1321,30 +1339,24 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void alignmentModeComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alignmentModeComboActionPerformed
 // TODO add your handling code here:
-        if(alignmentModeCombo.getSelectedItem()=="Drill bit alignment") {
-            jTabbedPane1.setEnabledAt(2,false);
-            jTabbedPane1.setEnabledAt(3,false);
-            jTabbedPane1.setEnabledAt(6,true);
-        } else if(alignmentModeCombo.getSelectedItem()=="Microscope alignment") {
-            jTabbedPane1.setEnabledAt(2,true);
-            jTabbedPane1.setEnabledAt(3,true);
-            jTabbedPane1.setEnabledAt(6,false);
+        if (alignmentModeCombo.getSelectedItem() == "Drill bit alignment") {
+            jTabbedPane1.setEnabledAt(2, false);
+            jTabbedPane1.setEnabledAt(3, false);
+            jTabbedPane1.setEnabledAt(6, true);
+        } else if (alignmentModeCombo.getSelectedItem() == "Microscope alignment") {
+            jTabbedPane1.setEnabledAt(2, true);
+            jTabbedPane1.setEnabledAt(3, true);
+            jTabbedPane1.setEnabledAt(6, false);
         }
     }//GEN-LAST:event_alignmentModeComboActionPerformed
     
     private void millUnitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_millUnitsComboActionPerformed
 // TODO add your handling code here:
-        
-        
-        
-        
-        
-        
     }//GEN-LAST:event_millUnitsComboActionPerformed
     
     private void outputComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputComboActionPerformed
 // TODO add your handling code here:
-        if(outputCombo.getSelectedItem()=="G-code") {
+        if (outputCombo.getSelectedItem() == "G-code") {
             serialDeviceLabel.setEnabled(false);
             serialDeviceField.setEnabled(false);
             millUnitsCombo.setSelectedItem("Millimeters");
@@ -1353,13 +1365,12 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             zDrillSpeedUnitsCombo.setSelectedItem("mm/min");
             fooLabel.setEnabled(true);
             joggerDialog.setVisible(false);
-            
+
             frontSignCombo.setEnabled(true);
             backSignCombo.setEnabled(true);
             rightSignCombo.setEnabled(true);
             leftSignCombo.setEnabled(true);
-            
-        } else if(outputCombo.getSelectedItem()=="Roland Modela") {
+        } else if (outputCombo.getSelectedItem() == "Roland Modela") {
             serialDeviceLabel.setEnabled(true);
             serialDeviceField.setEnabled(true);
             millUnitsCombo.setSelectedItem("Modela units");
@@ -1367,9 +1378,9 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             millUnitsLabel.setEnabled(false);
             zDrillSpeedUnitsCombo.setSelectedItem("Modela units/sec");
             zDrillSpeedUnitsCombo.setEnabled(false);
-            fooLabel.setEnabled(false);          
+            fooLabel.setEnabled(false);
             joggerDialog.setVisible(true);
-            
+
             frontSignCombo.setEnabled(false);
             backSignCombo.setEnabled(false);
             rightSignCombo.setEnabled(false);
@@ -1377,37 +1388,35 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             frontSignCombo.setSelectedItem("-");
             backSignCombo.setSelectedItem("+");
             rightSignCombo.setSelectedItem("+");
-            leftSignCombo.setSelectedItem("-");            
+            leftSignCombo.setSelectedItem("-");
         }
     }//GEN-LAST:event_outputComboActionPerformed
     
     private void zDrillSpeedUnitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zDrillSpeedUnitsComboActionPerformed
 // TODO add your handling code here:
-        
         zDrillSpeedUnitsLabel.setText(zDrillSpeedUnitsCombo.getSelectedItem().toString());
         zSpeedUnitsLabel.setText(zDrillSpeedUnitsCombo.getSelectedItem().toString());
     }//GEN-LAST:event_zDrillSpeedUnitsComboActionPerformed
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        
-        BufferedImage image2=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
-        Graphics graphics2=image2.getGraphics();
-        
+
+        BufferedImage image2 = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics graphics2 = image2.getGraphics();
+
         graphics2.setColor(Color.BLACK);
-        
-        for(int h=0; h<=holes;h++) {
-            
-            int xPlot=(int)(xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
-            int yPlot=(int)(yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
-            
-            xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
-            yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
-            
+
+        for (int h = 0; h <= holes; h++) {
+
+            int xPlot = (int) (xMODholes[h] - xMODmin-0.05*(xMODmin-xMODmax));
+            int yPlot = (int) (yMODholes[h] - yMODmin-0.05*(yMODmin-yMODmax));
+
+            xPlot = (int) (xPlot*inputPlot.getWidth() /(1.1*(xMODmax-xMODmin)));
+            yPlot = (int) (yPlot*inputPlot.getHeight()/(1.1*(yMODmax-yMODmin)));
+
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
-            
-            graphics2.fillOval( xPlot, yPlot, 5, 5 );
+            graphics2.fillOval(xPlot, yPlot, 5, 5);
         }
-        
+
         graphics2.dispose();
         inputPlot.setIcon(new ImageIcon(image2));
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -1418,13 +1427,12 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
 // TODO add your handling code here:
-        aboutDialog.setSize(300,400);
+        aboutDialog.setSize(300, 400);
         aboutDialog.setVisible(!aboutDialog.isVisible());
-        
     }//GEN-LAST:event_aboutButtonActionPerformed
     
     private void selectInputFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectInputFileButtonActionPerformed
-// TODO add your handling code here:
+        // TODO add your handling code here:
         
         jFileChooser1.showOpenDialog(this);
         inputFileTextArea.setText(jFileChooser1.getSelectedFile().toString());
@@ -1598,14 +1606,17 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     
                     //conversion math
                     
-                    if(rightSignCombo.getSelectedItem()=="+") { xSign=1; }
-                    else { xSign=-1; }
+                    if(rightSignCombo.getSelectedItem()=="+") { xSign=1; } else { xSign=-1; }
                     
-                    if(backSignCombo.getSelectedItem()=="+") { ySign=1; }
-                    else { ySign=-1; }
+                    if(backSignCombo.getSelectedItem()=="+") { ySign=1; } else { ySign=-1; }
                     
-                    xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF*xSign, yDXF*ySign)[0];
-                    yMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF*xSign, yDXF*ySign)[1];
+                    xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[0];
+                    yMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[1];
+                    
+                    // disabled Sign for now:
+                    //                    xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF*xSign, yDXF*ySign)[0];
+                    //                    yMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF*xSign, yDXF*ySign)[1];
+                    
                     
                     //remember (xDXF,yDXF) and (xMOD,yMOD) for plotting later
                     xDXFholes[hole]=xDXF;
@@ -1659,129 +1670,126 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     
                     
                     
+                    //consistent screw loading: move first to (xMOD-offset,yMOD-offset) absolute, head up
+                    double offset=0;
+                    if(millUnitsCombo.getSelectedItem()=="Modela units") { offset = 100; } else if(millUnitsCombo.getSelectedItem()=="Millimeters") { offset = 3; } else if(millUnitsCombo.getSelectedItem()=="Centimeters") { offset = 0.3; } else if(millUnitsCombo.getSelectedItem()=="Microns") { offset = 300; } else if(millUnitsCombo.getSelectedItem()=="Inches") { offset = 0.2; } else if(millUnitsCombo.getSelectedItem()=="Mils") { offset = 100; }
                     
+                    double xMODapproach=xMOD-offset;
+                    double yMODapproach=yMOD-offset;
                     
-                    // FIXME: I've gotten this far retrofitting code for Roland Modela / G-code option
-                    
-                    
-                    
-                    
-                    
-                    
-                    //consistent screw loading: move first to (xMOD-100,yMOD-100) absolute, head up
-                    double xMODapproach=xMOD-100;
-                    double yMODapproach=yMOD-100;
-                    out.write("echo 'PA;PU"+(int)xMODapproach+","+(int)yMODapproach+";' > "+serialDeviceField.getText()+"\n");
-                    
-                    //now move to (xMOD,yMOD) absolute, head up
-                    out.write("echo 'PA;PU"+(int)xMOD+","+(int)yMOD+";' > "+serialDeviceField.getText()+"\n");
-                    
-                    //drill by pecking, using RELATIVE coordinates in Z dimension
-                    //lower quickly to wafer surface
-                    out.write("echo 'PR;PD;' > "+serialDeviceField.getText()+"\n");
-                    double depth=0;
-                    while(depth<waferThickness+overdrill) {
-                        
-                        int repeat=0;
-                        
-                        while(repeat<repeats) {
-                            
-                            out.write("echo 'PR;");
-                            
-                            //lower quickly to previous drilled depth
-                            out.write("!VZ"+zSpeed+";");
-                            out.write("!ZM-"+(int)depth+";");
-                            
-                            //lower slowly one additional peck
-                            out.write("!VZ"+zDrillSpeed+";");
-                            out.write("!ZM-"+(int)peckDistance+";");
-                            
-                            //raise quickly to wafer surface
-                            out.write("!VZ"+zSpeed+";");
-                            out.write("!ZM"+(int)peckDistance+";");
-                            out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
-                            
-                            //record new peck repeat
-                            repeat=repeat+1;
+                    if(outputCombo.getSelectedItem()=="Roland Modela") {
+                        out.write("echo 'PA;PU"+(int)xMODapproach+","+(int)yMODapproach+";' > "+serialDeviceField.getText()+"\n");
+                    } 
+                        //now move to (xMOD,yMOD) absolute, head up
+                        if(outputCombo.getSelectedItem()=="Roland Modela") {
+                            out.write("echo 'PA;PU"+(int)xMOD+","+(int)yMOD+";' > "+serialDeviceField.getText()+"\n");
                         }
-                        //record new depth
-                        depth=depth+peckDistance;
+                        
+                        //drill by pecking, using RELATIVE coordinates in Z dimension
+                        //lower quickly to wafer surface
+                        out.write("echo 'PR;PD;' > "+serialDeviceField.getText()+"\n");
+                        double depth=0;
+                        while(depth<waferThickness+overdrill) {
+                            
+                            int repeat=0;
+                            
+                            while(repeat<repeats) {
+                                
+                                out.write("echo 'PR;");
+                                
+                                //lower quickly to previous drilled depth
+                                out.write("!VZ"+zSpeed+";");
+                                out.write("!ZM-"+(int)depth+";");
+                                
+                                //lower slowly one additional peck
+                                out.write("!VZ"+zDrillSpeed+";");
+                                out.write("!ZM-"+(int)peckDistance+";");
+                                
+                                //raise quickly to wafer surface
+                                out.write("!VZ"+zSpeed+";");
+                                out.write("!ZM"+(int)peckDistance+";");
+                                out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
+                                
+                                //record new peck repeat
+                                repeat=repeat+1;
+                            }
+                            //record new depth
+                            depth=depth+peckDistance;
+                        }
+                        
+                        //raise head to PU position before going to next hole
+                        //I don't think this is doing anything...
+                        //out.write("PU;");
+                        
+                        //last thing, return to scanmode 0
+                        scanmode=0;
+                    } else if(line.contains("CIRCLE")&&scanmode==0) {
+                        scanmode=1; ++circles;
+                    } else if(line.contains(" 10")&&scanmode==1) {
+                        scanmode=2;
+                    } else if(line.contains(" 20")&&scanmode==3) {
+                        scanmode=4;
                     }
-                    
-                    //raise head to PU position before going to next hole
-                    //I don't think this is doing anything...
-                    //out.write("PU;");
-                    
-                    //last thing, return to scanmode 0
-                    scanmode=0;
-                } else if(line.contains("CIRCLE")&&scanmode==0) {
-                    scanmode=1; ++circles;
-                } else if(line.contains(" 10")&&scanmode==1) {
-                    scanmode=2;
-                } else if(line.contains(" 20")&&scanmode==3) {
-                    scanmode=4;
                 }
-            }
-            //graceful shutdown
-            out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
+                //graceful shutdown
+                out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
+                
+                //statusLabel.setText("Converted "+circles+" holes");
+                
+                out.close();
+            } catch (IOException ioe) {}
             
-            //statusLabel.setText("Converted "+circles+" holes");
             
-            out.close();
-        } catch (IOException ioe) {}
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // BIG PASTE ENDS HERE
-        
-        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            // BIG PASTE ENDS HERE
+            
+            
     }//GEN-LAST:event_selectInputFileButtonActionPerformed
-    
+        
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        BufferedImage image=new BufferedImage(inputPlot.getWidth(),inputPlot.getHeight(),BufferedImage.TYPE_INT_ARGB);
-        Graphics graphics=image.getGraphics();
-        
+
+        BufferedImage image = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics graphics = image.getGraphics();
+
         graphics.setColor(Color.BLACK);
-        
-        for(int h=0; h<=holes;h++) {
-            
-            int xPlot=(int)(xDXFholes[h] - xDXFmin-0.05*(xDXFmin-xDXFmax));
-            int yPlot=(int)(yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
-            
-            xPlot=(int)(xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
-            yPlot=(int)(yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
-            
+
+        for (int h = 0; h <= holes; h++) {
+
+            int xPlot = (int) (xDXFholes[h] - xDXFmin-0.05*(xDXFmin-xDXFmax));
+            int yPlot = (int) (yDXFholes[h] - yDXFmin-0.05*(yDXFmin-yDXFmax));
+
+            xPlot = (int) (xPlot*inputPlot.getWidth() /(1.1*(xDXFmax-xDXFmin)));
+            yPlot = (int) (yPlot*inputPlot.getHeight()/(1.1*(yDXFmax-yDXFmin)));
+
             //System.out.println("("+xDXFholes[h]+", "+yDXFholes[h]+")   ("+xPlot+", "+yPlot+")");
-            
-            graphics.fillOval( xPlot, yPlot, 5, 5 );
+            graphics.fillOval(xPlot, yPlot, 5, 5);
         }
-        
+
         graphics.dispose();
         inputPlot.setIcon(new ImageIcon(image));
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
 // TODO add your handling code here:
-        if(jTabbedPane1.getSelectedIndex()==0) {
+        if (jTabbedPane1.getSelectedIndex() == 0) {
             previousButton.setEnabled(false);
         } else {
             previousButton.setEnabled(true);
         }
-        if(jTabbedPane1.getSelectedIndex()==jTabbedPane1.getComponentCount()-1) {
+        if (jTabbedPane1.getSelectedIndex() == jTabbedPane1.getComponentCount() - 1) {
             nextButton.setEnabled(false);
         } else {
             nextButton.setEnabled(true);
@@ -1790,18 +1798,18 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void previousButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousButtonActionPerformed
 // TODO add your handling code here:
-        if(jTabbedPane1.getSelectedIndex()>0) {
-            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()-1);
+        if (jTabbedPane1.getSelectedIndex() > 0) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() - 1);
         }
-        while(!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
-            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()-1);
+        while (!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() - 1);
         }
-        if(jTabbedPane1.getSelectedIndex()==0) {
+        if (jTabbedPane1.getSelectedIndex() == 0) {
             previousButton.setEnabled(false);
         } else {
             previousButton.setEnabled(true);
         }
-        if(jTabbedPane1.getSelectedIndex()==jTabbedPane1.getComponentCount()-1) {
+        if (jTabbedPane1.getSelectedIndex() == jTabbedPane1.getComponentCount() - 1) {
             nextButton.setEnabled(false);
         } else {
             nextButton.setEnabled(true);
@@ -1810,18 +1818,18 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
 // TODO add your handling code here:
-        if(jTabbedPane1.getSelectedIndex()<jTabbedPane1.getComponentCount()-1) {
-            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()+1);
+        if (jTabbedPane1.getSelectedIndex() < jTabbedPane1.getComponentCount() - 1) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() + 1);
         }
-        while(!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
-            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex()+1);
+        while (!jTabbedPane1.isEnabledAt(jTabbedPane1.getSelectedIndex())) {
+            jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() + 1);
         }
-        if(jTabbedPane1.getSelectedIndex()==0) {
+        if (jTabbedPane1.getSelectedIndex() == 0) {
             previousButton.setEnabled(false);
         } else {
             previousButton.setEnabled(true);
         }
-        if(jTabbedPane1.getSelectedIndex()==jTabbedPane1.getComponentCount()-1) {
+        if (jTabbedPane1.getSelectedIndex() == jTabbedPane1.getComponentCount() - 1) {
             nextButton.setEnabled(false);
         } else {
             nextButton.setEnabled(true);
@@ -2004,4 +2012,4 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel zSpeedUnitsLabel;
     // End of variables declaration//GEN-END:variables
     
-}
+    }
