@@ -132,6 +132,11 @@ public class modrilla extends javax.swing.JFrame {
         yMODa2UnitsLabel = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        zSurfaceField = new javax.swing.JTextField();
         jPanel11 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         waferThicknessField = new javax.swing.JTextField();
@@ -386,23 +391,23 @@ public class modrilla extends javax.swing.JFrame {
             .add(setupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(setupLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(setupPanelLayout.createSequentialGroup()
                         .add(outputLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(outputCombo, 0, 226, Short.MAX_VALUE))
+                        .add(outputCombo, 0, 651, Short.MAX_VALUE))
                     .add(setupPanelLayout.createSequentialGroup()
                         .add(unitsLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(unitsCombo, 0, 243, Short.MAX_VALUE))
+                        .add(unitsCombo, 0, 672, Short.MAX_VALUE))
                     .add(setupPanelLayout.createSequentialGroup()
                         .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(jLabel1)
                             .add(alignmentModeLabel))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(alignmentModeCombo, 0, 234, Short.MAX_VALUE)
-                            .add(jComboBox2, 0, 234, Short.MAX_VALUE)))
+                            .add(alignmentModeCombo, 0, 661, Short.MAX_VALUE)
+                            .add(jComboBox2, 0, 661, Short.MAX_VALUE)))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, aboutButton))
                 .addContainerGap())
         );
@@ -411,7 +416,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, setupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(setupLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 113, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 153, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 137, Short.MAX_VALUE)
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(alignmentModeLabel)
                     .add(alignmentModeCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -564,11 +569,11 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millSetupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(millSetupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, millSetupPanelLayout.createSequentialGroup()
                         .add(millUnitsLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(millUnitsCombo, 0, 272, Short.MAX_VALUE)))
+                        .add(millUnitsCombo, 0, 706, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         millSetupPanelLayout.setVerticalGroup(
@@ -576,7 +581,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millSetupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 176, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 163, Short.MAX_VALUE)
                 .add(millSetupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(millUnitsLabel)
                     .add(millUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -602,7 +607,7 @@ public class modrilla extends javax.swing.JFrame {
 
         jLabel48.setText("millimeters");
 
-        jLabel49.setText("<html>j; sj;l kjas fjs; dlfjs; kfjs ;dfj; as;fj skdj fs;dfj s;klf djslk jdf;s kjf; sd</html>");
+        jLabel49.setText("this \"drill nick\" is only used during MICROSCOPE ALIGNMENT");
         jLabel49.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         org.jdesktop.layout.GroupLayout drillNickPanelLayout = new org.jdesktop.layout.GroupLayout(drillNickPanel);
@@ -612,23 +617,23 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, drillNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, drillNickPanelLayout.createSequentialGroup()
                         .add(jLabel8)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .add(jTextField1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel9))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, drillNickPanelLayout.createSequentialGroup()
                         .add(jLabel41)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .add(jTextField2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel46))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, drillNickPanelLayout.createSequentialGroup()
                         .add(jLabel47)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .add(jTextField3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel48)))
                 .addContainerGap())
@@ -637,7 +642,7 @@ public class modrilla extends javax.swing.JFrame {
             drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, drillNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
+                .add(jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel47)
@@ -669,7 +674,7 @@ public class modrilla extends javax.swing.JFrame {
 
         jTextField5.setText("76");
 
-        jLabel50.setText("<html>j; sj;l kjas fjs; dlfjs; kfjs ;dfj; as;fj skdj fs;dfj s;klf djslk jdf;s kjf; sd</html>");
+        jLabel50.setText("this \"align nick\" is only used during MICROSCOPE ALIGNMENT");
         jLabel50.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         org.jdesktop.layout.GroupLayout alignToNickPanelLayout = new org.jdesktop.layout.GroupLayout(alignToNickPanel);
@@ -679,17 +684,17 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, alignToNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, alignToNickPanelLayout.createSequentialGroup()
                         .add(jLabel10)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .add(jTextField4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel11))
                     .add(alignToNickPanelLayout.createSequentialGroup()
                         .add(jLabel12)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jTextField5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                        .add(jTextField5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel13)))
                 .addContainerGap())
@@ -698,7 +703,7 @@ public class modrilla extends javax.swing.JFrame {
             alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, alignToNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
+                .add(jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel10)
@@ -736,13 +741,13 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jPanel7Layout.createSequentialGroup()
                         .add(jLabel14)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(xDXFa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(xDXFa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel15))
                     .add(jPanel7Layout.createSequentialGroup()
                         .add(jLabel16)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(yDXFa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(yDXFa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel17)))
                 .addContainerGap())
@@ -771,7 +776,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, DXFmarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(DXFmarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -779,7 +784,7 @@ public class modrilla extends javax.swing.JFrame {
             DXFmarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, DXFmarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
+                .add(jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -814,13 +819,13 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jPanel9Layout.createSequentialGroup()
                         .add(xMODa1Label)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(xMODa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(xMODa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(xMODa1UnitsLabel))
                     .add(jPanel9Layout.createSequentialGroup()
                         .add(yMODa1Label)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(yMODa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(yMODa1Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(yMODa1UnitsLabel)))
                 .addContainerGap())
@@ -862,13 +867,13 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jPanel10Layout.createSequentialGroup()
                         .add(xMODa2Label)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(xMODa2Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(xMODa2Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(xMODa2UnitsLabel))
                     .add(jPanel10Layout.createSequentialGroup()
                         .add(yMODa2Label)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(yMODa2Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(yMODa2Field, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(yMODa2UnitsLabel)))
                 .addContainerGap())
@@ -897,7 +902,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millMarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(millMarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel10, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -906,7 +911,7 @@ public class modrilla extends javax.swing.JFrame {
             millMarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millMarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .add(jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -915,15 +920,49 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("Mill marks", millMarksPanel);
 
+        jLabel25.setText("This \"drill nick\" is used during DRILL BIT ALIGNMENT for both outputs, \"Roland Modela\" and \"G-code\"");
+
+        jLabel26.setText("Get Z coordinate of wafer surface when using output \"G-code\", nothing for Modela");
+
+        jLabel27.setText("Z:");
+
+        jLabel28.setText("millimeters");
+
+        zSurfaceField.setText("jTextField7");
+
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 340, Short.MAX_VALUE)
+            .add(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jLabel26)
+                            .add(jLabel25))
+                        .add(46, 46, 46))
+                    .add(jPanel1Layout.createSequentialGroup()
+                        .add(jLabel27)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(zSurfaceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 671, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel28)
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 440, Short.MAX_VALUE)
+            .add(jPanel1Layout.createSequentialGroup()
+                .add(41, 41, 41)
+                .add(jLabel25)
+                .add(32, 32, 32)
+                .add(jLabel26)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 326, Short.MAX_VALUE)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel27)
+                    .add(jLabel28)
+                    .add(zSurfaceField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         jTabbedPane1.addTab("Drill nick", jPanel1);
 
@@ -986,43 +1025,43 @@ public class modrilla extends javax.swing.JFrame {
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(serialDeviceLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(serialDeviceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE))
+                        .add(serialDeviceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 655, Short.MAX_VALUE))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel38)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(repeatsField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))
+                        .add(repeatsField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 653, Short.MAX_VALUE))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel36)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                        .add(zSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 563, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zSpeedUnitsLabel))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel34)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(peckDistanceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
+                        .add(peckDistanceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel35))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel32)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(overdrillField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+                        .add(overdrillField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 645, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel33))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel30)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(waferThicknessField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                        .add(waferThicknessField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel31))
                     .add(jPanel11Layout.createSequentialGroup()
                         .add(fooLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zDrillSpeedUnitsCombo, 0, 231, Short.MAX_VALUE))
+                        .add(zDrillSpeedUnitsCombo, 0, 653, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel40)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                        .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 617, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zDrillSpeedUnitsLabel)))
                 .addContainerGap())
@@ -1030,7 +1069,7 @@ public class modrilla extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(227, Short.MAX_VALUE)
+                .addContainerGap(216, Short.MAX_VALUE)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(fooLabel)
                     .add(zDrillSpeedUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -1091,7 +1130,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jScrollPane7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(jScrollPane7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(selectInputFileButton))
                 .addContainerGap())
         );
@@ -1102,7 +1141,7 @@ public class modrilla extends javax.swing.JFrame {
                 .add(selectInputFileButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(304, Short.MAX_VALUE))
+                .addContainerGap(334, Short.MAX_VALUE))
         );
         jTabbedPane1.addTab("Input file", jPanel13);
 
@@ -1133,12 +1172,12 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .add(jPanel12Layout.createSequentialGroup()
                         .add(jButton1)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 122, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 539, Short.MAX_VALUE)
                         .add(jButton3))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel54, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel54, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
@@ -1148,7 +1187,7 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jLabel54, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(inputPlot, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 313, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 44, Short.MAX_VALUE)
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jButton1)
                     .add(jButton3))
@@ -1177,10 +1216,10 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 835, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .add(previousButton)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 137, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 596, Short.MAX_VALUE)
                         .add(nextButton)))
                 .addContainerGap())
         );
@@ -1188,7 +1227,7 @@ public class modrilla extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
+                .add(jTabbedPane1)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(previousButton)
@@ -1694,17 +1733,26 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     if(outputCombo.getSelectedItem()=="Roland Modela") {
                         depth=0;
                     }
+                    double zSurface=0;
+                    double zCurrent=0;
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        depth=0;  //FIXME replace with height of wafer surface
+                        zSurface=Double.parseDouble(zSurfaceField.getText());
+                        depth=0;
+                        zCurrent=zSurface;
                     }
                     
                     while(depth<waferThickness+overdrill) {
+                        
+                        zCurrent=zCurrent-depth;   // FIXME this assumes minus equals more depth
                         
                         int repeat=0;
                         
                         while(repeat<repeats) {
                             
-                            out.write("echo 'PR;");
+                            
+                            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                                out.write("echo 'PR;");
+                            }
                             
                             //lower quickly to previous drilled depth
                             if(outputCombo.getSelectedItem()=="Roland Modela") {
@@ -1712,7 +1760,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                                 out.write("!ZM-"+(int)depth+";");
                             }
                             if(outputCombo.getSelectedItem()=="G-code") {
-                                out.write("G00 Z"+depth+"\n");
+                                out.write("G00 Z"+zCurrent+"\n");
                             }
                             
                             //lower slowly one additional peck
@@ -1721,25 +1769,36 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                                 out.write("!ZM-"+(int)peckDistance+";");
                             }
                             if(outputCombo.getSelectedItem()=="G-code") {
-                                double newDepth=depth+peckDistance;   //FIXME this assumes adding depth = further down into glass, may not be true
-                                out.write("G01 Z"+newDepth+"\n");
+                                double zCurrentMinusOnePeck=zCurrent-peckDistance;
+                                out.write("G01 Z"+zCurrentMinusOnePeck+"\n");
                             }
                             
                             //raise quickly to wafer surface
-                            out.write("!VZ"+zSpeed+";");
-                            out.write("!ZM"+(int)peckDistance+";");
-                            out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
+                            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                                out.write("!VZ"+zSpeed+";");
+                                out.write("!ZM"+(int)peckDistance+";");
+                                out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
+                            }
+                            if(outputCombo.getSelectedItem()=="G-code") {
+                                out.write("G00 Z"+zSurface+"\n");
+                            }
                             
                             //record new peck repeat
                             repeat=repeat+1;
                         }
-                        //record new depth
+                        //record new depth - this affects both Modela and G-code modes
                         depth=depth+peckDistance;
                     }
                     
                     //raise head to PU position before going to next hole
                     //I don't think this is doing anything...
                     //out.write("PU;");
+                    
+                    //but we must raise the head to a safe drilling height for G-code:
+                    if(outputCombo.getSelectedItem()=="G-code") {
+                        double zSafe=zSurface+10;  // FIXME!!!!  CAN'T EVENTUALLY BE A CONSTANT!
+                        out.write("G00 Z"+zSafe+"\n");
+                    }
                     
                     //last thing, return to scanmode 0
                     scanmode=0;
@@ -1939,6 +1998,10 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -2030,6 +2093,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel zDrillSpeedUnitsLabel;
     private javax.swing.JTextField zSpeedField;
     private javax.swing.JLabel zSpeedUnitsLabel;
+    private javax.swing.JTextField zSurfaceField;
     // End of variables declaration//GEN-END:variables
     
 }
