@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.util.Date;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -1377,6 +1378,16 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         joggerDialog.setTitle("Modela jogger");
         leftSignCombo.setSelectedItem("-");
         frontSignCombo.setSelectedItem("-");
+        
+        
+        
+        
+        
+        try{
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        } catch(Exception e) {
+            
+        }
     }//GEN-LAST:event_formWindowOpened
     
     private void alignmentModeComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alignmentModeComboActionPerformed
