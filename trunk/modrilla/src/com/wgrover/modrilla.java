@@ -71,6 +71,7 @@ public class modrilla extends javax.swing.JFrame {
         aboutButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
+        jTextArea2 = new javax.swing.JTextArea();
         millSetupPanel = new javax.swing.JPanel();
         millUnitsLabel = new javax.swing.JLabel();
         millUnitsCombo = new javax.swing.JComboBox();
@@ -97,7 +98,7 @@ public class modrilla extends javax.swing.JFrame {
         jLabel47 = new javax.swing.JLabel();
         xNickWhenDrilledField = new javax.swing.JTextField();
         xNickWhenDrilledUnitsLabel = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
+        jTextArea3 = new javax.swing.JTextArea();
         alignToNickPanel = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         xNickInCrosshairField = new javax.swing.JTextField();
@@ -105,7 +106,7 @@ public class modrilla extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         yNickInCrosshairUnitsLabel = new javax.swing.JLabel();
         yNickInCrosshairField = new javax.swing.JTextField();
-        jLabel50 = new javax.swing.JLabel();
+        jTextArea4 = new javax.swing.JTextArea();
         DXFmarksPanel = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
@@ -114,7 +115,8 @@ public class modrilla extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         yDXFa1Field = new javax.swing.JTextField();
         yDXFa1UnitsLabel = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         millMarksPanel = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         xMODa1Label = new javax.swing.JLabel();
@@ -130,13 +132,13 @@ public class modrilla extends javax.swing.JFrame {
         yMODa2Label = new javax.swing.JLabel();
         yMODa2Field = new javax.swing.JTextField();
         yMODa2UnitsLabel = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
         zSurfaceLabel = new javax.swing.JLabel();
         zSurfaceUnitsLabel = new javax.swing.JLabel();
         zSurfaceField = new javax.swing.JTextField();
+        jTextArea6 = new javax.swing.JTextArea();
         jPanel11 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         waferThicknessField = new javax.swing.JTextField();
@@ -159,15 +161,17 @@ public class modrilla extends javax.swing.JFrame {
         zDrillSpeedUnitsLabel = new javax.swing.JLabel();
         fooLabel = new javax.swing.JLabel();
         zDrillSpeedUnitsCombo = new javax.swing.JComboBox();
+        jTextArea8 = new javax.swing.JTextArea();
         jPanel13 = new javax.swing.JPanel();
         selectInputFileButton = new javax.swing.JButton();
         jScrollPane7 = new javax.swing.JScrollPane();
         inputFileTextArea = new javax.swing.JTextArea();
+        jTextArea9 = new javax.swing.JTextArea();
         jPanel12 = new javax.swing.JPanel();
         inputPlot = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel54 = new javax.swing.JLabel();
+        jTextArea10 = new javax.swing.JTextArea();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
 
@@ -391,6 +395,13 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea2.setWrapStyleWord(true);
+
         org.jdesktop.layout.GroupLayout setupPanelLayout = new org.jdesktop.layout.GroupLayout(setupPanel);
         setupPanel.setLayout(setupPanelLayout);
         setupPanelLayout.setHorizontalGroup(
@@ -398,6 +409,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(setupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jTextArea2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(setupPanelLayout.createSequentialGroup()
                         .add(outputLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -420,7 +432,9 @@ public class modrilla extends javax.swing.JFrame {
         setupPanelLayout.setVerticalGroup(
             setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, setupPanelLayout.createSequentialGroup()
-                .addContainerGap(291, Short.MAX_VALUE)
+                .addContainerGap()
+                .add(jTextArea2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 146, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 230, Short.MAX_VALUE)
                 .add(setupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(alignmentModeLabel)
                     .add(alignmentModeCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -585,7 +599,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millSetupPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 190, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 286, Short.MAX_VALUE)
                 .add(millSetupPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(millUnitsLabel)
                     .add(millUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -611,8 +625,12 @@ public class modrilla extends javax.swing.JFrame {
 
         xNickWhenDrilledUnitsLabel.setText("millimeters");
 
-        jLabel49.setText("this \"drill nick\" is only used during MICROSCOPE ALIGNMENT");
-        jLabel49.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea3.setLineWrap(true);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("Used only during microscope alignment");
+        jTextArea3.setWrapStyleWord(true);
 
         org.jdesktop.layout.GroupLayout drillNickPanelLayout = new org.jdesktop.layout.GroupLayout(drillNickPanel);
         drillNickPanel.setLayout(drillNickPanelLayout);
@@ -621,7 +639,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, drillNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTextArea3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, drillNickPanelLayout.createSequentialGroup()
                         .add(jLabel8)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -646,7 +664,7 @@ public class modrilla extends javax.swing.JFrame {
             drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, drillNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel49, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE)
+                .add(jTextArea3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 450, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(drillNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel47)
@@ -678,8 +696,12 @@ public class modrilla extends javax.swing.JFrame {
 
         yNickInCrosshairField.setText("76");
 
-        jLabel50.setText("this \"align nick\" is only used during MICROSCOPE ALIGNMENT");
-        jLabel50.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea4.setLineWrap(true);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Used only during microscope alignment");
+        jTextArea4.setWrapStyleWord(true);
 
         org.jdesktop.layout.GroupLayout alignToNickPanelLayout = new org.jdesktop.layout.GroupLayout(alignToNickPanel);
         alignToNickPanel.setLayout(alignToNickPanelLayout);
@@ -688,7 +710,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, alignToNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTextArea4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, alignToNickPanelLayout.createSequentialGroup()
                         .add(jLabel10)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -707,7 +729,7 @@ public class modrilla extends javax.swing.JFrame {
             alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, alignToNickPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel50, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                .add(jTextArea4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 476, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(alignToNickPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel10)
@@ -770,8 +792,13 @@ public class modrilla extends javax.swing.JFrame {
                     .add(yDXFa1Field, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jLabel51.setText("<html>j; sj;l kjas fjs; dlfjs; kfjs ;dfj; as;fj skdj fs;dfj s;klf djslk jdf;s kjf; sd</html>");
-        jLabel51.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea1.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(jTextArea1);
 
         org.jdesktop.layout.GroupLayout DXFmarksPanelLayout = new org.jdesktop.layout.GroupLayout(DXFmarksPanel);
         DXFmarksPanel.setLayout(DXFmarksPanelLayout);
@@ -780,7 +807,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, DXFmarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(DXFmarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -788,7 +815,7 @@ public class modrilla extends javax.swing.JFrame {
             DXFmarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, DXFmarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel51, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 446, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -896,8 +923,8 @@ public class modrilla extends javax.swing.JFrame {
                     .add(yMODa2Field, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
         );
 
-        jLabel52.setText("<html>j; sj;l kjas fjs; dlfjs; kfjs ;dfj; as;fj skdj fs;dfj s;klf djslk jdf;s kjf; sd</html>");
-        jLabel52.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jTextPane1.setText("1.  Jog the drill bit to directly above the first (left-most) alignment mark.  Try to view the bit from different angles to make its alignment as accurate as possible.\n\n<b>2.</b>  Enter the coordinates of your first (left-most) alignment mark from the mill.  3.  Jog the drill bit to directly above the second (right-most) alignment mark.  4.  Enter the coordinates of your second (left-most) alignment mark from the mill. If you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.  If the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jScrollPane2.setViewportView(jTextPane1);
 
         org.jdesktop.layout.GroupLayout millMarksPanelLayout = new org.jdesktop.layout.GroupLayout(millMarksPanel);
         millMarksPanel.setLayout(millMarksPanelLayout);
@@ -906,7 +933,7 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millMarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(millMarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel10, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -915,8 +942,8 @@ public class modrilla extends javax.swing.JFrame {
             millMarksPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, millMarksPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel52, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jScrollPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 131, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 239, Short.MAX_VALUE)
                 .add(jPanel9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -924,15 +951,18 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("Mill marks", millMarksPanel);
 
-        jLabel25.setText("This \"drill nick\" is used during DRILL BIT ALIGNMENT for both outputs, \"Roland Modela\" and \"G-code\"");
-
-        jLabel26.setText("Get Z coordinate of wafer surface when using output \"G-code\", nothing for Modela");
-
         zSurfaceLabel.setText("Z:");
 
         zSurfaceUnitsLabel.setText("millimeters");
 
         zSurfaceField.setText("100");
+
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea6.setLineWrap(true);
+        jTextArea6.setRows(5);
+        jTextArea6.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea6.setWrapStyleWord(true);
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -941,25 +971,21 @@ public class modrilla extends javax.swing.JFrame {
             .add(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jTextArea6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(jPanel1Layout.createSequentialGroup()
                         .add(zSurfaceLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zSurfaceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(zSurfaceUnitsLabel))
-                    .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                        .add(jLabel26, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 349, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 349, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                        .add(zSurfaceUnitsLabel)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
-                .add(25, 25, 25)
-                .add(jLabel25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(24, 24, 24)
-                .add(jLabel26)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 338, Short.MAX_VALUE)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jTextArea6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 502, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(zSurfaceLabel)
                     .add(zSurfaceUnitsLabel)
@@ -1017,50 +1043,58 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea8.setLineWrap(true);
+        jTextArea8.setRows(5);
+        jTextArea8.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea8.setWrapStyleWord(true);
+
         org.jdesktop.layout.GroupLayout jPanel11Layout = new org.jdesktop.layout.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel11Layout.createSequentialGroup()
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel11Layout.createSequentialGroup()
+                .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTextArea8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(serialDeviceLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(serialDeviceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel38)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(repeatsField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel36)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zSpeedUnitsLabel))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel34)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(peckDistanceField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel35))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel32)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(overdrillField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel33))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(jLabel30)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(waferThicknessField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(jLabel31))
-                    .add(jPanel11Layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel11Layout.createSequentialGroup()
                         .add(fooLabel)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zDrillSpeedUnitsCombo, 0, 279, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
+                    .add(jPanel11Layout.createSequentialGroup()
                         .add(jLabel40)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(zDrillSpeedField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
@@ -1071,7 +1105,9 @@ public class modrilla extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(241, Short.MAX_VALUE)
+                .addContainerGap()
+                .add(jTextArea8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 320, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel11Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(fooLabel)
                     .add(zDrillSpeedUnitsCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -1125,6 +1161,13 @@ public class modrilla extends javax.swing.JFrame {
         inputFileTextArea.setText("no file selected");
         jScrollPane7.setViewportView(inputFileTextArea);
 
+        jTextArea9.setColumns(20);
+        jTextArea9.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea9.setLineWrap(true);
+        jTextArea9.setRows(5);
+        jTextArea9.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea9.setWrapStyleWord(true);
+
         org.jdesktop.layout.GroupLayout jPanel13Layout = new org.jdesktop.layout.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
@@ -1133,17 +1176,20 @@ public class modrilla extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(jScrollPane7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
-                    .add(selectInputFileButton))
+                    .add(selectInputFileButton)
+                    .add(jTextArea9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel13Layout.createSequentialGroup()
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
+                .add(jTextArea9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 201, Short.MAX_VALUE)
                 .add(selectInputFileButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(318, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jTabbedPane1.addTab("Input file", jPanel13);
 
@@ -1164,8 +1210,12 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
-        jLabel54.setText("<html>j; sj;l kjas fjs; dlfjs; kfjs ;dfj; as;fj skdj fs;dfj s;klf djslk jdf;s kjf; sd</html>");
-        jLabel54.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jTextArea10.setColumns(20);
+        jTextArea10.setFont(new java.awt.Font("SansSerif", 0, 13));
+        jTextArea10.setLineWrap(true);
+        jTextArea10.setRows(5);
+        jTextArea10.setText("Enter the coordinates of your first (left-hand) alignment mark from the DXF file.\n\nIf you don't know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.\n\nIf the units below aren't the same as the units of your DXF file, go back to the \"Setup\" step in this program and select the correct units beside \"Input file units.\"");
+        jTextArea10.setWrapStyleWord(true);
 
         org.jdesktop.layout.GroupLayout jPanel12Layout = new org.jdesktop.layout.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -1174,22 +1224,22 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jTextArea10, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
                     .add(jPanel12Layout.createSequentialGroup()
                         .add(jButton1)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 170, Short.MAX_VALUE)
                         .add(jButton3))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel54, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel54, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 42, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(jTextArea10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(inputPlot, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 313, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jButton1)
                     .add(jButton3))
@@ -1229,7 +1279,7 @@ public class modrilla extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 498, Short.MAX_VALUE)
+                .add(jTabbedPane1)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(previousButton)
@@ -1383,11 +1433,11 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         
         
         
-        try{
-            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-        } catch(Exception e) {
-            
-        }
+        //try{
+        //    UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        //} catch(Exception e) {
+        //    
+        //}
     }//GEN-LAST:event_formWindowOpened
     
     private void alignmentModeComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alignmentModeComboActionPerformed
@@ -2048,8 +2098,6 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -2063,12 +2111,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -2080,11 +2123,22 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea10;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JDialog joggerDialog;
     private javax.swing.JComboBox leftSignCombo;
     private javax.swing.JPanel millMarksPanel;
