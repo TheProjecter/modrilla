@@ -11,7 +11,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane8" pref="555" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="487" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -20,27 +20,24 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane8" pref="278" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="278" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTextArea" name="jTextArea7">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane1">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Modrilla v2.0&#xa;&#xa;Copyright (c) 2007 Will Grover&#xa;&#xa;Based in part on &apos;dxf2fgc&apos; copyright (c) 2007 Will Grover.  http://wgrover.com/dxf2fgc&#xa;&#xa;Based in part on &apos;cam.py&apos; copyright (c) 2006 Neil Gershenfeld, Massachusetts Institute of Technology.  Permission granted for experimental and personal use; license for commercial sale available from MIT. http://cba.mit.edu/~neilg/fab/dist/&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#xa;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;h1&gt;Modrilla v2.0&lt;/h1&gt;&#xa;&#xa;&lt;h2&gt;Copyright (c) 2007 Will Grover&lt;/h2&gt;&#xa;&#xa;Based in part on &apos;dxf2fgc&apos; copyright (c) 2007 Will Grover.  http://wgrover.com/dxf2fgc&#xa;&#xa;Based in part on &apos;cam.py&apos; copyright (c) 2006 Neil Gershenfeld, Massachusetts Institute of Technology.  Permission granted for experimental and personal use; license for commercial sale available from MIT. http://cba.mit.edu/~neilg/fab/dist/&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -215,7 +212,6 @@
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
       <Color id="Default Cursor"/>
     </Property>
-    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -242,7 +238,7 @@
                   <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="previousButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="145" max="32767" attributes="0"/>
+                      <EmptySpace pref="155" max="32767" attributes="0"/>
                       <Component id="nextButton" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -253,13 +249,14 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jTabbedPane1" min="-2" pref="400" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="389" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="previousButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="nextButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="previousButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="nextButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="11" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -287,18 +284,18 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane3" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jScrollPane3" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="unitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="unitsCombo" pref="251" max="32767" attributes="0"/>
+                              <Component id="unitsCombo" pref="261" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="outputLabel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="outputCombo" pref="234" max="32767" attributes="0"/>
+                                      <Component id="outputCombo" pref="244" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -307,8 +304,8 @@
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="alignmentModeCombo" pref="242" max="32767" attributes="0"/>
-                                          <Component id="jComboBox2" alignment="0" pref="242" max="32767" attributes="0"/>
+                                          <Component id="alignmentModeCombo" pref="252" max="32767" attributes="0"/>
+                                          <Component id="jComboBox2" alignment="0" pref="252" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -324,7 +321,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane3" pref="192" max="32767" attributes="0"/>
+                      <Component id="jScrollPane3" pref="181" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="alignmentModeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -452,7 +449,7 @@
                         <Font name="Serif" size="12" style="0"/>
                       </FontInfo>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Alignment mode&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;Drill bit alignment:&lt;/i&gt;  The drill bit is aligned to two alignment marks on the glass.&#xa;  &lt;li&gt;&lt;i&gt;Microscope alignment:&lt;/i&gt;   Two alignment marks on the glass are sighted through a fixed microscope (NOT FULLY IMPLEMENTED).&#xa;  &lt;/ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Input file format&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;DXF:&lt;/i&gt;  The DXF CAD format from AutoCAD, Adobe Illustrator, etc.&#xa;  &lt;/ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Input file units:&lt;/b&gt;&#xa;&lt;li&gt;&lt;b&gt;Output file format&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;G-code:&lt;/i&gt;&#xa;  &lt;li&gt;&lt;i&gt;Roland Modela:&lt;/i&gt;&#xa;  &lt;/ul&gt;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -474,11 +471,11 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jPanel2" alignment="0" pref="328" max="32767" attributes="1"/>
+                          <Component id="jPanel2" alignment="0" pref="338" max="32767" attributes="1"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="millUnitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="millUnitsCombo" pref="280" max="32767" attributes="0"/>
+                              <Component id="millUnitsCombo" pref="290" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -490,7 +487,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="95" max="32767" attributes="0"/>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="millUnitsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="millUnitsCombo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -705,25 +702,25 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane3" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane3" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
+                              <Component id="zNickWhenDrilledField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="yNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
+                              <Component id="yNickWhenDrilledField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="yNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="xNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
+                              <Component id="xNickWhenDrilledField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="xNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -736,7 +733,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane3" pref="256" max="32767" attributes="0"/>
+                      <Component id="jEditorPane3" pref="245" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -834,18 +831,18 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane4" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane4" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="xNickInCrosshairField" pref="261" max="32767" attributes="0"/>
+                              <Component id="xNickInCrosshairField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="xNickInCrosshairUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="yNickInCrosshairField" pref="261" max="32767" attributes="0"/>
+                              <Component id="yNickInCrosshairField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="yNickInCrosshairUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -858,7 +855,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane4" pref="282" max="32767" attributes="0"/>
+                      <Component id="jEditorPane4" pref="271" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -936,7 +933,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane5" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane5" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="jPanel7" alignment="0" max="32767" attributes="1"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -947,7 +944,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane5" pref="255" max="32767" attributes="0"/>
+                      <Component id="jEditorPane5" pref="244" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -974,14 +971,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xDXFa1Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="xDXFa1Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xDXFa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yDXFa1Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="yDXFa1Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yDXFa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1070,7 +1067,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane6" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane6" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="jPanel10" alignment="0" max="32767" attributes="0"/>
                           <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -1111,14 +1108,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa1Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="xMODa1Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa1Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="yMODa1Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1199,14 +1196,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa2Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="xMODa2Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa2Field" pref="229" max="32767" attributes="0"/>
+                                  <Component id="yMODa2Field" pref="239" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1295,11 +1292,11 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane7" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane7" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="zSurfaceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSurfaceField" pref="261" max="32767" attributes="0"/>
+                              <Component id="zSurfaceField" pref="271" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSurfaceUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1312,7 +1309,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane7" pref="308" max="32767" attributes="0"/>
+                      <Component id="jEditorPane7" pref="297" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="zSurfaceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1369,54 +1366,54 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane8" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane8" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="serialDeviceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="serialDeviceField" pref="244" max="32767" attributes="0"/>
+                              <Component id="serialDeviceField" pref="254" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="repeatsField" pref="236" max="32767" attributes="0"/>
+                              <Component id="repeatsField" pref="246" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedField" pref="186" max="32767" attributes="0"/>
+                              <Component id="zSpeedField" pref="196" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="peckDistanceField" pref="215" max="32767" attributes="0"/>
+                              <Component id="peckDistanceField" pref="225" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="overdrillField" pref="240" max="32767" attributes="0"/>
+                              <Component id="overdrillField" pref="250" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="waferThicknessField" pref="208" max="32767" attributes="0"/>
+                              <Component id="waferThicknessField" pref="218" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="fooLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedUnitsCombo" pref="239" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedUnitsCombo" pref="249" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedField" pref="223" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedField" pref="233" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zDrillSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1429,7 +1426,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane8" pref="126" max="32767" attributes="0"/>
+                      <Component id="jEditorPane8" pref="115" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="fooLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1625,8 +1622,8 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane9" alignment="0" pref="328" max="32767" attributes="0"/>
-                          <Component id="jScrollPane7" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane9" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Component id="jScrollPane7" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="selectInputFileButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1637,7 +1634,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane9" pref="203" max="32767" attributes="0"/>
+                      <Component id="jEditorPane9" pref="192" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="selectInputFileButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1702,11 +1699,11 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="inputPlot" alignment="0" pref="328" max="32767" attributes="0"/>
-                          <Component id="jEditorPane10" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="inputPlot" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Component id="jEditorPane10" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="130" max="32767" attributes="0"/>
+                              <EmptySpace pref="140" max="32767" attributes="0"/>
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1718,7 +1715,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane10" pref="112" max="32767" attributes="0"/>
+                      <Component id="jEditorPane10" pref="101" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="inputPlot" min="-2" pref="187" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
