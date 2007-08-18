@@ -212,6 +212,10 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Modrilla"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -232,13 +236,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTabbedPane1" alignment="0" pref="393" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
                       <Component id="previousButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="185" max="32767" attributes="0"/>
+                      <EmptySpace pref="145" max="32767" attributes="0"/>
                       <Component id="nextButton" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -248,15 +252,14 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" min="-2" pref="400" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="previousButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="nextButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -281,32 +284,37 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextArea2" alignment="0" pref="368" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="outputLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="outputCombo" pref="274" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jScrollPane3" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="unitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="unitsCombo" pref="291" max="32767" attributes="0"/>
+                              <Component id="unitsCombo" pref="251" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="alignmentModeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="outputLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="outputCombo" pref="234" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="alignmentModeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="alignmentModeCombo" pref="242" max="32767" attributes="0"/>
+                                          <Component id="jComboBox2" alignment="0" pref="242" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="alignmentModeCombo" alignment="0" pref="282" max="32767" attributes="0"/>
-                                  <Component id="jComboBox2" alignment="0" pref="282" max="32767" attributes="0"/>
-                              </Group>
                           </Group>
-                          <Component id="aboutButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="aboutButton" alignment="1" min="-2" pref="143" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -316,8 +324,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea2" min="-2" pref="146" max="-2" attributes="0"/>
-                      <EmptySpace pref="230" max="32767" attributes="0"/>
+                      <Component id="jScrollPane3" pref="192" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="alignmentModeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="alignmentModeCombo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -337,7 +345,7 @@
                           <Component id="outputLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="outputCombo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="aboutButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -428,20 +436,27 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea2">
-              <Properties>
-                <Property name="columns" type="int" value="20"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                  <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
-                  </FontInfo>
-                </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane2">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="false">
+                        <Font name="Serif" size="12" style="0"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="millSetupPanel">
@@ -459,11 +474,11 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jPanel2" alignment="0" pref="368" max="32767" attributes="1"/>
+                          <Component id="jPanel2" alignment="0" pref="328" max="32767" attributes="1"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="millUnitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="millUnitsCombo" pref="320" max="32767" attributes="0"/>
+                              <Component id="millUnitsCombo" pref="280" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -475,7 +490,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="286" max="32767" attributes="0"/>
+                      <EmptySpace pref="95" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="millUnitsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="millUnitsCombo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -690,25 +705,25 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextArea3" alignment="0" pref="368" max="32767" attributes="0"/>
+                          <Component id="jEditorPane3" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zNickWhenDrilledField" pref="301" max="32767" attributes="0"/>
+                              <Component id="zNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="yNickWhenDrilledField" pref="301" max="32767" attributes="0"/>
+                              <Component id="yNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="yNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="xNickWhenDrilledField" pref="301" max="32767" attributes="0"/>
+                              <Component id="xNickWhenDrilledField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="xNickWhenDrilledUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -721,7 +736,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea3" pref="450" max="32767" attributes="0"/>
+                      <Component id="jEditorPane3" pref="256" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -791,18 +806,15 @@
                 <Property name="text" type="java.lang.String" value="millimeters"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea3">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane3">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Used only during microscope alignment"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -822,18 +834,18 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextArea4" alignment="0" pref="368" max="32767" attributes="0"/>
+                          <Component id="jEditorPane4" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="xNickInCrosshairField" pref="301" max="32767" attributes="0"/>
+                              <Component id="xNickInCrosshairField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="xNickInCrosshairUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="yNickInCrosshairField" pref="301" max="32767" attributes="0"/>
+                              <Component id="yNickInCrosshairField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="yNickInCrosshairUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -846,7 +858,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea4" pref="476" max="32767" attributes="0"/>
+                      <Component id="jEditorPane4" pref="282" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -895,18 +907,16 @@
                 <Property name="text" type="java.lang.String" value="76"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea4">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane4">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Used only during microscope alignment"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -926,8 +936,8 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jScrollPane1" alignment="0" pref="368" max="32767" attributes="0"/>
-                          <Component id="jPanel7" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jEditorPane5" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jPanel7" alignment="0" max="32767" attributes="1"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -937,7 +947,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" pref="446" max="32767" attributes="0"/>
+                      <Component id="jEditorPane5" pref="255" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -964,14 +974,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xDXFa1Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="xDXFa1Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xDXFa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yDXFa1Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="yDXFa1Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yDXFa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1031,29 +1041,18 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="javax.swing.JTextArea" name="jTextArea1">
-                  <Properties>
-                    <Property name="columns" type="int" value="20"/>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                      <FontInfo relative="false">
-                        <Font name="SansSerif" size="13" style="0"/>
-                      </FontInfo>
-                    </Property>
-                    <Property name="lineWrap" type="boolean" value="true"/>
-                    <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                    <Property name="wrapStyleWord" type="boolean" value="true"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
+            <Component class="javax.swing.JEditorPane" name="jEditorPane5">
+              <Properties>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                  <FontInfo relative="false">
+                    <Font name="Serif" size="12" style="0"/>
+                  </FontInfo>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="millMarksPanel">
@@ -1071,9 +1070,9 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jScrollPane2" alignment="0" pref="368" max="32767" attributes="0"/>
-                          <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jEditorPane6" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Component id="jPanel10" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1081,12 +1080,12 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="131" max="-2" attributes="0"/>
-                      <EmptySpace pref="239" max="32767" attributes="0"/>
+                      <Component id="jEditorPane6" min="-2" pref="176" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1112,14 +1111,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa1Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="xMODa1Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa1Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa1Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="yMODa1Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa1UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1200,14 +1199,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="xMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="xMODa2Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="xMODa2Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="xMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="yMODa2Label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="yMODa2Field" pref="265" max="32767" attributes="0"/>
+                                  <Component id="yMODa2Field" pref="229" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="yMODa2UnitsLabel" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -1267,20 +1266,18 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-              <AuxValues>
-                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-              </AuxValues>
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-              <SubComponents>
-                <Component class="javax.swing.JTextPane" name="jTextPane1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="1.  Jog the drill bit to directly above the first (left-most) alignment mark.  Try to view the bit from different angles to make its alignment as accurate as possible.&#xa;&#xa;&lt;b&gt;2.&lt;/b&gt;  Enter the coordinates of your first (left-most) alignment mark from the mill.  3.  Jog the drill bit to directly above the second (right-most) alignment mark.  4.  Enter the coordinates of your second (left-most) alignment mark from the mill. If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.  If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
+            <Component class="javax.swing.JEditorPane" name="jEditorPane6">
+              <Properties>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                  <FontInfo relative="false">
+                    <Font name="Serif" size="12" style="0"/>
+                  </FontInfo>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel1">
@@ -1295,14 +1292,14 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextArea6" alignment="0" pref="368" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jEditorPane7" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
                               <Component id="zSurfaceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSurfaceField" pref="301" max="32767" attributes="0"/>
+                              <Component id="zSurfaceField" pref="261" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSurfaceUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1315,7 +1312,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea6" pref="502" max="32767" attributes="0"/>
+                      <Component id="jEditorPane7" pref="308" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="zSurfaceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1343,18 +1340,16 @@
                 <Property name="text" type="java.lang.String" value="100"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea6">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane7">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1374,54 +1369,54 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextArea8" alignment="0" pref="368" max="32767" attributes="0"/>
+                          <Component id="jEditorPane8" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="serialDeviceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="serialDeviceField" pref="284" max="32767" attributes="0"/>
+                              <Component id="serialDeviceField" pref="244" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="repeatsField" pref="276" max="32767" attributes="0"/>
+                              <Component id="repeatsField" pref="236" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedField" pref="226" max="32767" attributes="0"/>
+                              <Component id="zSpeedField" pref="186" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="peckDistanceField" pref="255" max="32767" attributes="0"/>
+                              <Component id="peckDistanceField" pref="215" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="overdrillField" pref="280" max="32767" attributes="0"/>
+                              <Component id="overdrillField" pref="240" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="waferThicknessField" pref="248" max="32767" attributes="0"/>
+                              <Component id="waferThicknessField" pref="208" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="fooLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedUnitsCombo" pref="279" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedUnitsCombo" pref="239" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedField" pref="263" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedField" pref="223" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zDrillSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1434,7 +1429,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea8" pref="320" max="32767" attributes="0"/>
+                      <Component id="jEditorPane8" pref="126" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="fooLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1601,18 +1596,16 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zDrillSpeedUnitsComboActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea8">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane8">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1629,12 +1622,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane7" pref="368" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jEditorPane9" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jScrollPane7" alignment="0" pref="328" max="32767" attributes="0"/>
                           <Component id="selectInputFileButton" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextArea9" alignment="0" pref="368" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1644,8 +1637,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="201" max="32767" attributes="0"/>
+                      <Component id="jEditorPane9" pref="203" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="selectInputFileButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
@@ -1680,18 +1673,16 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JTextArea" name="jTextArea9">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane9">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1711,13 +1702,13 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextArea10" alignment="0" pref="368" max="32767" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
+                          <Component id="inputPlot" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Component id="jEditorPane10" alignment="0" pref="328" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="170" max="32767" attributes="0"/>
+                              <EmptySpace pref="130" max="32767" attributes="0"/>
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="inputPlot" alignment="0" pref="368" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1727,9 +1718,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextArea10" pref="180" max="32767" attributes="0"/>
+                      <Component id="jEditorPane10" pref="112" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="inputPlot" min="-2" pref="313" max="-2" attributes="0"/>
+                      <Component id="inputPlot" min="-2" pref="187" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1765,18 +1756,16 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextArea" name="jTextArea10">
+            <Component class="javax.swing.JEditorPane" name="jEditorPane10">
               <Properties>
-                <Property name="columns" type="int" value="20"/>
+                <Property name="contentType" type="java.lang.String" value="text/html"/>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
                   <FontInfo relative="false">
-                    <Font name="SansSerif" size="13" style="0"/>
+                    <Font name="Serif" size="12" style="0"/>
                   </FontInfo>
                 </Property>
-                <Property name="lineWrap" type="boolean" value="true"/>
-                <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Enter the coordinates of your first (left-hand) alignment mark from the DXF file.&#xa;&#xa;If you don&apos;t know the coordinates, open your DXF file in AutoCAD or similar software, locate the left-most alignment mark, and note the coordinates of the mark in AutoCAD.  Enter those coordinates here.&#xa;&#xa;If the units below aren&apos;t the same as the units of your DXF file, go back to the &quot;Setup&quot; step in this program and select the correct units beside &quot;Input file units.&quot;"/>
-                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
