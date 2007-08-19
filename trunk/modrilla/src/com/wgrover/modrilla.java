@@ -8,6 +8,8 @@ package com.wgrover;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,16 +19,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 import javax.swing.ImageIcon;
-import javax.swing.JTabbedPane;
-import javax.swing.UIManager;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
 
 /**
  *
@@ -55,19 +47,29 @@ public class modrilla extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
         joggerDialog = new javax.swing.JDialog();
-        minusYButton = new javax.swing.JButton();
-        minusXButton = new javax.swing.JButton();
-        plusXButton = new javax.swing.JButton();
-        plusYButton = new javax.swing.JButton();
-        speedCombo = new javax.swing.JComboBox();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        copyYButton = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        yLabel = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         xLabel = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        yLabel = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        copyXButton = new javax.swing.JButton();
+        speedCombo = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        plusYButton = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        minusXButton = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        plusXButton = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        minusYButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        plotDialog = new javax.swing.JDialog();
+        inputPlot = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         setupPanel = new javax.swing.JPanel();
         alignmentModeLabel = new javax.swing.JLabel();
@@ -178,9 +180,10 @@ public class modrilla extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jEditorPane9 = new javax.swing.JEditorPane();
         jPanel12 = new javax.swing.JPanel();
-        inputPlot = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jEditorPane2 = new javax.swing.JEditorPane();
         nextButton = new javax.swing.JButton();
         previousButton = new javax.swing.JButton();
 
@@ -204,61 +207,40 @@ public class modrilla extends javax.swing.JFrame {
                 .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        joggerDialog.getContentPane().setLayout(new java.awt.GridBagLayout());
+        joggerDialog.getContentPane().setLayout(new java.awt.GridLayout(2, 1));
 
         joggerDialog.setAlwaysOnTop(true);
-        minusYButton.setText("\u2193");
-        minusYButton.addActionListener(new java.awt.event.ActionListener() {
+        copyYButton.setText("Copy to clipboard");
+        copyYButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                minusYButtonActionPerformed(evt);
+                copyYButtonActionPerformed(evt);
             }
         });
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 10;
-        joggerDialog.getContentPane().add(minusYButton, gridBagConstraints);
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel19.setText("units");
 
-        minusXButton.setText("\u2190");
-        minusXButton.addActionListener(new java.awt.event.ActionListener() {
+        yLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        yLabel.setText("0");
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel6.setText("Y:");
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("X:");
+
+        xLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        xLabel.setText("0");
+
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel18.setText("units");
+
+        copyXButton.setText("Copy to clipboard");
+        copyXButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                minusXButtonActionPerformed(evt);
+                copyXButtonActionPerformed(evt);
             }
         });
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        joggerDialog.getContentPane().add(minusXButton, gridBagConstraints);
-
-        plusXButton.setText("\u2192");
-        plusXButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                plusXButtonActionPerformed(evt);
-            }
-        });
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        joggerDialog.getContentPane().add(plusXButton, gridBagConstraints);
-
-        plusYButton.setText("\u2191");
-        plusYButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                plusYButtonActionPerformed(evt);
-            }
-        });
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        joggerDialog.getContentPane().add(plusYButton, gridBagConstraints);
 
         speedCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Slow", "Fast" }));
         speedCombo.addActionListener(new java.awt.event.ActionListener() {
@@ -267,82 +249,129 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(0, 5, 10, 0);
-        joggerDialog.getContentPane().add(speedCombo, gridBagConstraints);
-
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Jog speed:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        joggerDialog.getContentPane().add(jLabel2, gridBagConstraints);
+        jLabel2.setText("Speed:");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("X:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 5;
-        gridBagConstraints.ipady = 5;
-        joggerDialog.getContentPane().add(jLabel3, gridBagConstraints);
+        org.jdesktop.layout.GroupLayout jPanel4Layout = new org.jdesktop.layout.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel4Layout.createSequentialGroup()
+                        .add(jLabel2)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(speedCombo, 0, 159, Short.MAX_VALUE))
+                    .add(jPanel4Layout.createSequentialGroup()
+                        .add(jLabel3)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(xLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 28, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(copyXButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
+                    .add(jPanel4Layout.createSequentialGroup()
+                        .add(jLabel6)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(yLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jLabel19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 28, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(copyYButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(speedCombo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(xLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jLabel18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(copyXButton))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(yLabel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jLabel19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(copyYButton))
+                .addContainerGap())
+        );
+        joggerDialog.getContentPane().add(jPanel4);
 
-        xLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        xLabel.setText("0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 5;
-        gridBagConstraints.ipady = 5;
-        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 5);
-        joggerDialog.getContentPane().add(xLabel, gridBagConstraints);
+        jPanel3.setLayout(new java.awt.GridLayout(3, 3));
 
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel6.setText("Y:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        joggerDialog.getContentPane().add(jLabel6, gridBagConstraints);
+        jPanel3.add(jLabel9);
 
-        yLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        yLabel.setText("0");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(0, 5, 10, 5);
-        joggerDialog.getContentPane().add(yLabel, gridBagConstraints);
+        plusYButton.setText("\u2191");
+        plusYButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plusYButtonActionPerformed(evt);
+            }
+        });
 
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel18.setText("units");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 5;
-        gridBagConstraints.ipady = 5;
-        joggerDialog.getContentPane().add(jLabel18, gridBagConstraints);
+        jPanel3.add(plusYButton);
 
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel19.setText("units");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        joggerDialog.getContentPane().add(jLabel19, gridBagConstraints);
+        jPanel3.add(jLabel13);
+
+        minusXButton.setText("\u2190");
+        minusXButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minusXButtonActionPerformed(evt);
+            }
+        });
+
+        jPanel3.add(minusXButton);
+
+        jPanel3.add(jLabel11);
+
+        plusXButton.setText("\u2192");
+        plusXButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plusXButtonActionPerformed(evt);
+            }
+        });
+
+        jPanel3.add(plusXButton);
+
+        jPanel3.add(jLabel15);
+
+        minusYButton.setText("\u2193");
+        minusYButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minusYButtonActionPerformed(evt);
+            }
+        });
+
+        jPanel3.add(minusYButton);
+
+        joggerDialog.getContentPane().add(jPanel3);
 
         jLabel5.setText("jLabel5");
+        inputPlot.setBackground(new java.awt.Color(255, 255, 255));
+        inputPlot.setOpaque(true);
+
+        org.jdesktop.layout.GroupLayout plotDialogLayout = new org.jdesktop.layout.GroupLayout(plotDialog.getContentPane());
+        plotDialog.getContentPane().setLayout(plotDialogLayout);
+        plotDialogLayout.setHorizontalGroup(
+            plotDialogLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(plotDialogLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 355, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        plotDialogLayout.setVerticalGroup(
+            plotDialogLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(plotDialogLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Modrilla");
@@ -1197,9 +1226,6 @@ public class modrilla extends javax.swing.JFrame {
         );
         jTabbedPane1.addTab("Input file", jPanel13);
 
-        inputPlot.setBackground(new java.awt.Color(255, 255, 255));
-        inputPlot.setOpaque(true);
-
         jButton1.setText("Plot input file");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1214,6 +1240,10 @@ public class modrilla extends javax.swing.JFrame {
             }
         });
 
+        jEditorPane2.setContentType("text/html");
+        jEditorPane2.setText("<html>\n<b>Click the buttons below to review the hole locations in the input and output files.</b>\n</html>");
+        jScrollPane6.setViewportView(jEditorPane2);
+
         org.jdesktop.layout.GroupLayout jPanel12Layout = new org.jdesktop.layout.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -1221,22 +1251,20 @@ public class modrilla extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
-                    .add(jPanel12Layout.createSequentialGroup()
-                        .add(jButton1)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 140, Short.MAX_VALUE)
-                        .add(jButton3)))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jButton3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(inputPlot, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
+                .add(jScrollPane6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jButton1)
-                    .add(jButton3))
+                .add(jButton1)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jButton3)
                 .addContainerGap())
         );
         jTabbedPane1.addTab("Plot", jPanel12);
@@ -1282,6 +1310,16 @@ public class modrilla extends javax.swing.JFrame {
         );
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void copyYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyYButtonActionPerformed
+        StringSelection ss = new StringSelection(yLabel.getText());
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss,null);
+    }//GEN-LAST:event_copyYButtonActionPerformed
+    
+    private void copyXButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyXButtonActionPerformed
+        StringSelection ss = new StringSelection(xLabel.getText());
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss,null);
+    }//GEN-LAST:event_copyXButtonActionPerformed
     
     private void unitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitsComboActionPerformed
 // TODO add your handling code here:
@@ -1418,104 +1456,97 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         
         jTabbedPane1.setEnabledAt(2, false);
         jTabbedPane1.setEnabledAt(3, false);
-        joggerDialog.setSize(275, 225);
+        joggerDialog.setSize(300, 300);
         joggerDialog.setTitle("Modela jogger");
         leftSignCombo.setSelectedItem("-");
         frontSignCombo.setSelectedItem("-");
         
         
+        plotDialog.setSize(500,500);
         
+
         
-        
-        //try{
-        //    UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-        //} catch(Exception e) {
-        //
-        //}
-        
-        
-        
-//        
+//
 //        // XML experiments:
 //        try {
-//            
+//
 //            DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
 //            DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
 //            Document doc = docBuilder.parse(new File("modrilla.xml"));
-//            
+//
 //            // normalize text representation
 //            doc.getDocumentElement().normalize();
 //            System.out.println("Root element of the doc is " +
 //                    doc.getDocumentElement().getNodeName());
-//            
-//            
+//
+//
 //            NodeList listOfPersons = doc.getElementsByTagName("person");
 //            int totalPersons = listOfPersons.getLength();
 //            System.out.println("Total no of people : " + totalPersons);
-//            
+//
 //            for(int s=0; s<listOfPersons.getLength() ; s++){
-//                
-//                
+//
+//
 //                Node firstPersonNode = listOfPersons.item(s);
 //                if(firstPersonNode.getNodeType() == Node.ELEMENT_NODE){
-//                    
-//                    
+//
+//
 //                    Element firstPersonElement = (Element)firstPersonNode;
-//                    
+//
 //                    //-------
 //                    NodeList firstNameList = firstPersonElement.getElementsByTagName("first");
 //                    Element firstNameElement = (Element)firstNameList.item(0);
-//                    
+//
 //                    NodeList textFNList = firstNameElement.getChildNodes();
 //                    System.out.println("First Name : " +
 //                            ((Node)textFNList.item(0)).getNodeValue().trim());
-//                    
+//
 //                    //-------
 //                    NodeList lastNameList = firstPersonElement.getElementsByTagName("last");
 //                    Element lastNameElement = (Element)lastNameList.item(0);
-//                    
+//
 //                    NodeList textLNList = lastNameElement.getChildNodes();
 //                    System.out.println("Last Name : " + ((Node)textLNList.item(0)).getNodeValue().trim());
-//                    
-//                    
-//                    
+//
+//
+//
 //                    // my additions: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //                    if(((Node)textFNList.item(0)).getNodeValue().trim().equals("aboutModrilla")) {
 //                        aboutButton.setText(((Node)textLNList.item(0)).getNodeValue().trim());
-//                    }                  
+//                    }
 //                    //if(((Node)textFNList.item(0)).getNodeValue().trim().equals("setupEditorPane")) {
 //                    //    setupEditorPane.setText(((Node)textLNList.item(0)).getNodeValue().trim());
-//                    //}                    
+//                    //}
 //                    //------
-//                    
-//                    
-//                    
-//                    
-//                    
+//
+//
+//
+//
+//
 //                }//end of if clause
-//                
-//                
+//
+//
 //            }//end of for loop with s var
-//            
-//            
+//
+//
 //        } catch (SAXParseException err) {
 //            System.out.println("** Parsing error" + ", line "
 //                    + err.getLineNumber() + ", uri " + err.getSystemId());
 //            System.out.println(" " + err.getMessage());
-//            
+//
 //        } catch (SAXException e) {
 //            Exception x = e.getException();
 //            ((x == null) ? e : x).printStackTrace();
-//            
+//
 //        } catch (Throwable t) {
 //            t.printStackTrace();
 //        }
-//        
-//        
-//        
-//        
-//        
-//        
+//
+//
+//
+//
+//
+//
         
         
         
@@ -1615,6 +1646,8 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     }//GEN-LAST:event_zDrillSpeedUnitsComboActionPerformed
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        plotDialog.setVisible(true);
         
         BufferedImage image2 = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
         Graphics graphics2 = image2.getGraphics();
@@ -2037,6 +2070,8 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
+        plotDialog.setVisible(true);
+        
         BufferedImage image = new BufferedImage(inputPlot.getWidth(), inputPlot.getHeight(), BufferedImage.TYPE_INT_ARGB);
         Graphics graphics = image.getGraphics();
         
@@ -2169,6 +2204,8 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JComboBox alignmentModeCombo;
     private javax.swing.JLabel alignmentModeLabel;
     private javax.swing.JComboBox backSignCombo;
+    private javax.swing.JButton copyXButton;
+    private javax.swing.JButton copyYButton;
     private javax.swing.JPanel drillNickPanel;
     private javax.swing.JLabel fooLabel;
     private javax.swing.JComboBox frontSignCombo;
@@ -2178,6 +2215,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JEditorPane jEditorPane2;
     private javax.swing.JEditorPane jEditorPane3;
     private javax.swing.JEditorPane jEditorPane4;
     private javax.swing.JEditorPane jEditorPane5;
@@ -2188,8 +2226,11 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -2216,12 +2257,15 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
@@ -2229,6 +2273,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField6;
@@ -2245,6 +2290,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private javax.swing.JLabel outputLabel;
     private javax.swing.JTextField overdrillField;
     private javax.swing.JTextField peckDistanceField;
+    private javax.swing.JDialog plotDialog;
     private javax.swing.JButton plusXButton;
     private javax.swing.JButton plusYButton;
     private javax.swing.JButton previousButton;
