@@ -925,11 +925,11 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane5" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="jPanel7" alignment="0" max="32767" attributes="1"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane2" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Component id="jPanel7" alignment="0" min="-2" max="-2" attributes="1"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -939,7 +939,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane5" pref="244" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" pref="244" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1033,18 +1033,24 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane5">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                  <FontInfo relative="false">
-                    <Font name="Serif" size="12" style="0"/>
-                  </FontInfo>
-                </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane5">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="false">
+                        <Font name="Serif" size="12" style="0"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Enter the DXF file coordinates of the first (leftmost) alignment mark.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;If you don&apos;t know these coordinates, open your DXF file in AutoCAD, Adobe Illustrator, etc., locate the leftmost alignment mark, and read off the coordiantes of the mark.  Enter those coordinates below.&#xa;&#xa;&lt;p&gt;If the units below are not the same as the units of your DXF file, click &quot;Previous step&quot; to go back to the &quot;Setup&quot; step and enter the correct units at &quot;DXF file units.&quot;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="millMarksPanel">
@@ -1063,7 +1069,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jEditorPane6" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="jPanel10" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jPanel10" alignment="1" max="32767" attributes="0"/>
                           <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1072,12 +1078,12 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane6" min="-2" pref="176" max="-2" attributes="0"/>
+                      <Component id="jEditorPane6" pref="165" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1358,62 +1364,70 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane8" alignment="0" pref="338" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane4" pref="338" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="serialDeviceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="serialDeviceField" pref="254" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="repeatsField" pref="246" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="zSpeedField" pref="196" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="zSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="peckDistanceField" pref="225" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="overdrillField" pref="250" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="waferThicknessField" pref="218" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="fooLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="zDrillSpeedUnitsCombo" pref="249" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="zDrillSpeedField" pref="233" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="zDrillSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="repeatsField" pref="246" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedField" pref="196" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="peckDistanceField" pref="225" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="overdrillField" pref="250" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="waferThicknessField" pref="218" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="fooLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedUnitsCombo" pref="249" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedField" pref="233" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1421,7 +1435,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane8" pref="115" max="32767" attributes="0"/>
+                      <Component id="jScrollPane4" min="-2" pref="115" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="fooLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1588,18 +1602,24 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zDrillSpeedUnitsComboActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane8">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                  <FontInfo relative="false">
-                    <Font name="Serif" size="12" style="0"/>
-                  </FontInfo>
-                </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane8">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="false">
+                        <Font name="Serif" size="12" style="0"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill Z speed units&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Z drill speed&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Glass thickness&lt;/b&gt; is the thickness of your &quot;good&quot; piece of glass, in microns.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Overdrill&lt;/b&gt; is the distance to drill past the backside of the &quot;good&quot; piece of glass and into the &quot;bad&quot; backing piece of glass. The default value of 500 microns is usually OK. Be sure that your &quot;bad&quot; backing wafer is thicker than the &lt;i&gt;Overdrill&lt;/i&gt; depth!&#xa;&#xa;&lt;p&gt;&lt;b&gt;Peck depth&lt;/b&gt; is the amount of glass removed per peck; the default 100 microns is usually OK.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Non-drilling Z speed&lt;/b&gt;&#xa;&#xa;settings were arrive at by trial and error and probably shouldn&apos;t be changed unless you know what you&apos;re doing.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Repeats per peck&lt;/b&gt; is the number of times each peck is repeated before moving on to the next depth.  This should remain at &quot;1&quot; unless bending or looseness in the mill mechanism necessitates repeated pecks.  For the Roland Modela, set &lt;i&gt;Repeats per peck&lt;/i&gt; to 3.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill serial device&lt;/b&gt; is the full path to the Linux serial device to which the Roland Modela is connected.&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel13">
@@ -1617,7 +1637,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane9" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Component id="jScrollPane5" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="jScrollPane7" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="selectInputFileButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -1629,7 +1649,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane9" pref="192" max="32767" attributes="0"/>
+                      <Component id="jScrollPane5" min="-2" pref="192" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="selectInputFileButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1665,18 +1685,24 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane9">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                  <FontInfo relative="false">
-                    <Font name="Serif" size="12" style="0"/>
-                  </FontInfo>
-                </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane9">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="false">
+                        <Font name="Serif" size="12" style="0"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Click &lt;i&gt;Select DXF file&lt;/i&gt; and select your DXF file.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel12">
@@ -1695,8 +1721,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="inputPlot" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="jEditorPane10" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="140" max="32767" attributes="0"/>
                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
@@ -1710,9 +1735,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane10" pref="101" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="inputPlot" min="-2" pref="187" max="-2" attributes="0"/>
+                      <Component id="inputPlot" pref="294" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1747,18 +1770,6 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
               </Events>
-            </Component>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane10">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                  <FontInfo relative="false">
-                    <Font name="Serif" size="12" style="0"/>
-                  </FontInfo>
-                </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
