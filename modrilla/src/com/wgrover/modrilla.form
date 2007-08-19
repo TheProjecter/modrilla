@@ -440,16 +440,11 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JEditorPane" name="jEditorPane2">
+                <Component class="javax.swing.JEditorPane" name="setupEditorPane">
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-                      <FontInfo relative="false">
-                        <Font name="Serif" size="12" style="0"/>
-                      </FontInfo>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Alignment mode&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;Drill bit alignment:&lt;/i&gt;  The drill bit is aligned to two alignment marks on the glass.&#xa;  &lt;li&gt;&lt;i&gt;Microscope alignment:&lt;/i&gt;   Two alignment marks on the glass are sighted through a fixed microscope (NOT FULLY IMPLEMENTED).&#xa;  &lt;/ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Input file format&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;DXF:&lt;/i&gt;  The DXF CAD format from AutoCAD, Adobe Illustrator, etc.&#xa;  &lt;/ul&gt;&#xa;&lt;li&gt;&lt;b&gt;Input file units:&lt;/b&gt;&#xa;&lt;li&gt;&lt;b&gt;Output file format&lt;/b&gt;&#xa;  &lt;ul&gt;&#xa;  &lt;li&gt;&lt;i&gt;G-code:&lt;/i&gt;&#xa;  &lt;li&gt;&lt;i&gt;Roland Modela:&lt;/i&gt;&#xa;  &lt;/ul&gt;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="            &lt;html&gt;&#xa;                &lt;ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Alignment mode&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Drill bit alignment:&lt;/i&gt;  The drill bit is aligned to two alignment marks on the glass.&lt;/li&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Microscope alignment:&lt;/i&gt;   Two alignment marks on the glass are sighted through a fixed microscope (NOT FULLY IMPLEMENTED).&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Input file format&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;DXF:&lt;/i&gt;  The DXF CAD format from AutoCAD, Adobe Illustrator, etc.&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Input file units:&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Output file format&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;G-code:&lt;/i&gt;&lt;/li&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Roland Modela:&lt;/i&gt;&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                &lt;/ul&gt;&#xa;            &lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
