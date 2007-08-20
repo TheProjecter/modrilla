@@ -4,12 +4,13 @@
  * Created on July 13, 2007, 8:53 PM
  */
 
-// to do:
-// eliminate possible scientific notation output
-// reduce sig figs in output if possible
-// add end G-code M30
+// TO DO:
+// eliminate possible scientific notation output - very important (fixed)
+// reduce sig figs in output if possible (fixed)
+// add end G-code M2  (fixed?)
 // fix gd plot eventually
 // default feedrate for g-code of 0.1
+// fix bad use of if(a=="foo") for string equivalency checking, replace with if(a.equals("foo"))
 
 package com.wgrover;
 
@@ -24,6 +25,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Date;
 import javax.swing.ImageIcon;
 
@@ -1461,6 +1463,9 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         
         
         
+        
+        
+        
         jTabbedPane1.setEnabledAt(2, false);
         jTabbedPane1.setEnabledAt(3, false);
         joggerDialog.setSize(301, 301);
@@ -1950,7 +1955,8 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                         out.write("echo 'PA;PU"+(int)xMODapproach+","+(int)yMODapproach+";' > "+serialDeviceField.getText()+"\n");
                     }
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        out.write("G00 X"+xMODapproach+" Y"+yMODapproach+"\n");
+                        //out.write("G00 X"+xMODapproach+" Y"+yMODapproach+"\n");
+                        out.write("G00 X"+floaty.format(xMODapproach)+" Y"+yMODapproach+"\n");   //testing new formatting
                     }
                     
                     //now move to (xMOD,yMOD) absolute, head up
@@ -1997,7 +2003,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                                 out.write("!ZM-"+(int)depth+";");
                             }
                             if(outputCombo.getSelectedItem()=="G-code") {
-                                out.write("G00 Z"+zCurrent+"\n");
+                                out.write("G00 Z"+floaty.format(zCurrent)+"\n");
                             }
                             
                             //lower slowly one additional peck
@@ -2007,7 +2013,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                             }
                             if(outputCombo.getSelectedItem()=="G-code") {
                                 double zCurrentMinusOnePeck=zCurrent-peckDistance;
-                                out.write("G01 Z"+zCurrentMinusOnePeck+"\n");
+                                out.write("G01 Z"+floaty.format(zCurrentMinusOnePeck)+"\n");
                             }
                             
                             //raise quickly to wafer surface
@@ -2017,7 +2023,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                                 out.write("!ZM"+(int)depth+";' > "+serialDeviceField.getText()+"\n");
                             }
                             if(outputCombo.getSelectedItem()=="G-code") {
-                                out.write("G00 Z"+zSurface+"\n");
+                                out.write("G00 Z"+floaty.format(zSurface)+"\n");
                             }
                             
                             //record new peck repeat
@@ -2034,7 +2040,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     //but we must raise the head to a safe drilling height for G-code:
                     if(outputCombo.getSelectedItem()=="G-code") {
                         double zSafe=zSurface+0.2;  // FIXME!!!!  CAN'T EVENTUALLY BE A CONSTANT!
-                        out.write("G00 Z"+zSafe+"\n");
+                        out.write("G00 Z"+floaty.format(zSafe)+"\n");
                     }
                     
                     //last thing, return to scanmode 0
@@ -2050,6 +2056,9 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
             //graceful shutdown
             if(outputCombo.getSelectedItem()=="Roland Modela") {
                 out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
+            }
+            if(outputCombo.getSelectedItem()=="G-code") {
+                out.write("M2\n");
             }
             
             //statusLabel.setText("Converted "+circles+" holes");
@@ -2182,7 +2191,17 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         return xyMOD;
     }
     
+   
+    
+    // inty format (for Modela, other mills with whole-number coordinates)
+    DecimalFormat inty = new DecimalFormat("##########");
+    
+    // floaty format
+    DecimalFormat floaty = new DecimalFormat("#####.00000");
+    
+    
     File infile=null;
+    
     
     double [] xDXFholes = new double [100];
     double [] yDXFholes = new double [100];
