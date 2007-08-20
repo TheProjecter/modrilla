@@ -1456,7 +1456,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         
         jTabbedPane1.setEnabledAt(2, false);
         jTabbedPane1.setEnabledAt(3, false);
-        joggerDialog.setSize(300, 300);
+        joggerDialog.setSize(301, 301);
         joggerDialog.setTitle("Modela jogger");
         leftSignCombo.setSelectedItem("-");
         frontSignCombo.setSelectedItem("-");
