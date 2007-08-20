@@ -4,6 +4,13 @@
  * Created on July 13, 2007, 8:53 PM
  */
 
+// to do:
+// eliminate possible scientific notation output
+// reduce sig figs in output if possible
+// add end G-code M30
+// fix gd plot eventually
+// default feedrate for g-code of 0.1
+
 package com.wgrover;
 
 import java.awt.Color;
@@ -1310,7 +1317,7 @@ public class modrilla extends javax.swing.JFrame {
         );
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void copyYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyYButtonActionPerformed
         StringSelection ss = new StringSelection(yLabel.getText());
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss,null);
@@ -1464,7 +1471,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         
         plotDialog.setSize(500,500);
         
-
+        
         
 //
 //        // XML experiments:
@@ -1720,22 +1727,22 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
         if(millUnitsCombo.getSelectedItem()=="Modela units") {
             ;  //do nothing; scaleFactor is already in Modela units
         } else if(millUnitsCombo.getSelectedItem()=="Mils") {
-            scaleFactor=0.984/scaleFactor;
+            scaleFactor=scaleFactor/0.984;
         } else if(millUnitsCombo.getSelectedItem()=="Inches") {
-            scaleFactor=0.000984/scaleFactor;
+            scaleFactor=scaleFactor/0.000984;
         } else if(millUnitsCombo.getSelectedItem()=="Millimeters") {
-            scaleFactor=0.025/scaleFactor;
+            scaleFactor=scaleFactor/0.025;
         } else if(millUnitsCombo.getSelectedItem()=="Microns") {
-            scaleFactor=25.0/scaleFactor;
+            scaleFactor=scaleFactor/25.0;
         } else if(millUnitsCombo.getSelectedItem()=="Centimeters") {
-            scaleFactor=0.0025/scaleFactor;
+            scaleFactor=scaleFactor/0.0025;
         }
         
         
         //DXF coords are divided by scaleFactor
         double xDXFa1=Double.parseDouble(xDXFa1Field.getText())/scaleFactor;
         double yDXFa1=Double.parseDouble(yDXFa1Field.getText())/scaleFactor;
-        //Coords from Mill are not scaled
+        //Coords from Mill are not scaled because they're already in the mill's units
         double xMODa1=Double.parseDouble(xMODa1Field.getText());
         double yMODa1=Double.parseDouble(yMODa1Field.getText());
         double xMODa2=Double.parseDouble(xMODa2Field.getText());
@@ -1966,14 +1973,14 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     double zSurface=0;
                     double zCurrent=0;
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        zSurface=Double.parseDouble(zSurfaceField.getText());
+                        zSurface=Double.parseDouble(zSurfaceField.getText());  //already in mill units
                         depth=0;
                         zCurrent=zSurface;
                     }
                     
                     while(depth<waferThickness+overdrill) {
                         
-                        zCurrent=zCurrent-depth;   // FIXME this assumes minus equals more depth
+                        zCurrent=zSurface-depth;   // FIXME this assumes minus equals more depth
                         
                         int repeat=0;
                         
@@ -2026,7 +2033,7 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                     
                     //but we must raise the head to a safe drilling height for G-code:
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        double zSafe=zSurface+10;  // FIXME!!!!  CAN'T EVENTUALLY BE A CONSTANT!
+                        double zSafe=zSurface+0.2;  // FIXME!!!!  CAN'T EVENTUALLY BE A CONSTANT!
                         out.write("G00 Z"+zSafe+"\n");
                     }
                     
@@ -2041,7 +2048,9 @@ private void rightSignComboActionPerformed(java.awt.event.ActionEvent evt) {//GE
                 }
             }
             //graceful shutdown
-            out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                out.write("echo 'PA;PU1000,1000;!MC0;' > "+serialDeviceField.getText()+"\n");
+            }
             
             //statusLabel.setText("Converted "+circles+" holes");
             
