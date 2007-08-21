@@ -674,13 +674,9 @@ public class modrilla extends javax.swing.JFrame {
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("First alignment mark"));
         jLabel14.setText("X:");
 
-        xDXFa1Field.setText("67");
-
         xDXFa1UnitsLabel.setText("millimeters");
 
         jLabel16.setText("Y:");
-
-        yDXFa1Field.setText("99");
 
         yDXFa1UnitsLabel.setText("millimeters");
 
@@ -805,7 +801,6 @@ public class modrilla extends javax.swing.JFrame {
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder("First alignment mark"));
         xMODa1Label.setText("X:");
 
-        xMODa1Field.setText("100");
         xMODa1Field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xMODa1FieldActionPerformed(evt);
@@ -815,8 +810,6 @@ public class modrilla extends javax.swing.JFrame {
         xMODa1UnitsLabel.setText("millimeters");
 
         yMODa1Label.setText("Y:");
-
-        yMODa1Field.setText("200");
 
         yMODa1UnitsLabel.setText("millimeters");
 
@@ -858,13 +851,9 @@ public class modrilla extends javax.swing.JFrame {
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder("Second alignment mark"));
         xMODa2Label.setText("X:");
 
-        xMODa2Field.setText("500");
-
         xMODa2UnitsLabel.setText("millimeters");
 
         yMODa2Label.setText("Y:");
-
-        yMODa2Field.setText("500");
 
         yMODa2UnitsLabel.setText("millimeters");
 
@@ -937,8 +926,6 @@ public class modrilla extends javax.swing.JFrame {
         zSurfaceLabel.setText("Z:");
 
         zSurfaceUnitsLabel.setText("millimeters");
-
-        zSurfaceField.setText("100");
 
         drillNickEditorPane.setContentType("text/html");
         drillNickEditorPane.setEditable(false);
@@ -1142,7 +1129,7 @@ public class modrilla extends javax.swing.JFrame {
 
         jEditorPane9.setContentType("text/html");
         jEditorPane9.setEditable(false);
-        jEditorPane9.setText("<html>\n\n<b>Click <u>Select DXF file</u> and select your input DXF file.</b>\n\n</html>");
+        jEditorPane9.setText("<html>\n\n<b>Click <u>Select DXF file</u> and select your input DXF file.</b>\n\n<p><b>Modrilla will create a new G-code or Modela file in the same directory as the input DXF file.</b>\n\n</html>");
         jScrollPane5.setViewportView(jEditorPane9);
 
         org.jdesktop.layout.GroupLayout jPanel13Layout = new org.jdesktop.layout.GroupLayout(jPanel13);

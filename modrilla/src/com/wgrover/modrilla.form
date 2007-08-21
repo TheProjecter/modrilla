@@ -935,9 +935,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xDXFa1Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="67"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="xDXFa1UnitsLabel">
                   <Properties>
@@ -950,9 +947,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yDXFa1Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="99"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="yDXFa1UnitsLabel">
                   <Properties>
@@ -1163,9 +1157,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xMODa1Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="100"/>
-                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xMODa1FieldActionPerformed"/>
                   </Events>
@@ -1181,9 +1172,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yMODa1Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="200"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="yMODa1UnitsLabel">
                   <Properties>
@@ -1252,9 +1240,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="xMODa2Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="500"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="xMODa2UnitsLabel">
                   <Properties>
@@ -1267,9 +1252,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="yMODa2Field">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="500"/>
-                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="yMODa2UnitsLabel">
                   <Properties>
@@ -1349,9 +1331,6 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="zSurfaceField">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="100"/>
-              </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane9">
 
@@ -1696,7 +1675,7 @@
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Click &lt;u&gt;Select DXF file&lt;/u&gt; and select your input DXF file.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Click &lt;u&gt;Select DXF file&lt;/u&gt; and select your input DXF file.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Modrilla will create a new G-code or Modela file in the same directory as the input DXF file.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
