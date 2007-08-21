@@ -5,9 +5,6 @@
  */
 
 // TO DO:
-// eliminate possible scientific notation output - very important (fixed)
-// reduce sig figs in output if possible (fixed)
-// add end G-code M2  (fixed?)
 // fix gd plot eventually
 // default feedrate for g-code of 0.1
 // fix bad use of if(a=="foo") for string equivalency checking, replace with if(a.equals("foo"))
@@ -49,8 +46,6 @@ public class modrilla extends javax.swing.JFrame {
      */
     // <editor-fold defaultstate="collapsed" desc=" Generated Code ">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
-
         jFileChooser1 = new javax.swing.JFileChooser();
         aboutDialog = new javax.swing.JDialog();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -1031,7 +1026,7 @@ public class modrilla extends javax.swing.JFrame {
 
         optionsEditorPane.setContentType("text/html");
         optionsEditorPane.setEditable(false);
-        optionsEditorPane.setText("<html>\n\n<p><b>Mill Z speed units:</b>   <u>Mill speed units</u> means that you wil specify Z-axis (drilling) speeds in whatever are the default speed units for your mill, probably inches/minute or millimeters/minute.  Modrilla doesn't need to know the exact units.  Specify <u>Modrilla units/sec</u> if you are preparing a file for a Roland Modela.\n\n<p><b>Z drill speed:</b>  This is the slow speed at which the drill bit will be lowered during drilling, usually around 0.1 inches/minute, 2.54 millimeters/minute, or 0.01 Modrilla units/second.\n\n<p><b>Glass thickness</b> is the thickness of your \"good\" piece of glass, in microns.\n\n<p><b>Overdrill</b> is the distance to drill past the backside of the \"good\" piece of glass and into the \"bad\" backing piece of glass. The default value of 500 microns is usually OK. Be sure that your \"bad\" backing wafer is thicker than the <i>Overdrill</i> depth!\n\n<p><b>Peck depth</b> is the amount of glass removed per peck; the default 100 microns is usually OK.\n\n<p><b>Peck distance,</b> the amount of glass removed per peck, should be 100 microns or less.\n\n<p><b>Non-drilling Z speed</b> is the fast speed at which the drill bit is raised or lowered during non-drilling motions, usually around 10 inches/minute, 25.4 millimeters/minute, or 10 Modrilla units/second.\n\n<p><b>Repeats per peck</b> is the number of times each peck is repeated before moving on to the next depth.  This should remain at \"1\" unless bending or looseness in the mill mechanism necessitates repeated pecks.  For the Roland Modela, set <i>Repeats per peck</i> to 3.\n\n<p><b>Mill serial device</b> is the full path to the Linux serial device to which the Roland Modela is connected.\n\n</html>");
+        optionsEditorPane.setText("<html>\n\n<b>Mill Z speed units:</b>   <u>Mill speed units</u> means that you wil specify Z-axis (drilling) speeds in whatever are the default speed units for your mill, probably inches/minute or millimeters/minute.  Modrilla doesn't need to know the exact units.  Specify <u>Modrilla units/sec</u> if you are preparing a file for a Roland Modela.\n\n<p><b>Z drill speed:</b>  This is the slow speed at which the drill bit will be lowered during drilling, usually around 0.1 inches/minute, 2.54 millimeters/minute, or 0.01 Modrilla units/second.\n\n<p><b>Glass thickness</b> is the thickness of your \"good\" piece of glass, in microns.\n\n<p><b>Overdrill</b> is the distance to drill past the backside of the \"good\" piece of glass and into the \"bad\" backing piece of glass. The default value of 500 microns is usually OK. Be sure that your \"bad\" backing wafer is thicker than the <i>Overdrill</i> depth!\n\n<p><b>Peck depth</b> is the amount of glass removed per peck; the default 100 microns is usually OK.\n\n<p><b>Peck distance,</b> the amount of glass removed per peck, should be 100 microns or less.\n\n<p><b>Non-drilling Z speed</b> is the fast speed at which the drill bit is raised or lowered during non-drilling motions, usually around 10 inches/minute, 25.4 millimeters/minute, or 10 Modrilla units/second.\n\n<p><b>Repeats per peck</b> is the number of times each peck is repeated before moving on to the next depth.  This should remain at \"1\" unless bending or looseness in the mill mechanism necessitates repeated pecks.  For the Roland Modela, set <i>Repeats per peck</i> to 3.\n\n<p><b>Mill serial device</b> is the full path to the Linux serial device to which the Roland Modela is connected.\n\n</html>");
         jScrollPane4.setViewportView(optionsEditorPane);
 
         org.jdesktop.layout.GroupLayout jPanel11Layout = new org.jdesktop.layout.GroupLayout(jPanel11);
@@ -1147,7 +1142,7 @@ public class modrilla extends javax.swing.JFrame {
 
         jEditorPane9.setContentType("text/html");
         jEditorPane9.setEditable(false);
-        jEditorPane9.setText("<html>\n\n<p><b>Click <u>Select DXF file</u> and select your input DXF file.</b>\n\n</html>");
+        jEditorPane9.setText("<html>\n\n<b>Click <u>Select DXF file</u> and select your input DXF file.</b>\n\n</html>");
         jScrollPane5.setViewportView(jEditorPane9);
 
         org.jdesktop.layout.GroupLayout jPanel13Layout = new org.jdesktop.layout.GroupLayout(jPanel13);
@@ -1279,7 +1274,7 @@ public class modrilla extends javax.swing.JFrame {
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
 // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
-        
+    
     private void minusYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusYButtonActionPerformed
 // TODO add your handling code here:
         try {
@@ -1375,7 +1370,7 @@ public class modrilla extends javax.swing.JFrame {
         joggerDialog.setSize(301, 301);
         joggerDialog.setTitle("Modela jogger");
         
-        aboutDialog.setSize(500,700);
+        aboutDialog.setSize(500,500);
         plotDialog.setSize(500,500);
         
         
@@ -1518,7 +1513,7 @@ public class modrilla extends javax.swing.JFrame {
             fooLabel.setEnabled(true);
             joggerDialog.setVisible(false);
             
-
+            
             
             zSurfaceField.setEnabled(true);
             zSurfaceLabel.setEnabled(true);
@@ -1535,7 +1530,7 @@ public class modrilla extends javax.swing.JFrame {
             fooLabel.setEnabled(false);
             joggerDialog.setVisible(true);
             
-
+            
             
             zSurfaceField.setEnabled(false);
             zSurfaceLabel.setEnabled(false);
@@ -1693,7 +1688,14 @@ public class modrilla extends javax.swing.JFrame {
         try {
             FileReader fr = new FileReader(infile);
             BufferedReader in=new BufferedReader(fr);
-            BufferedWriter out = new BufferedWriter(new FileWriter(infile.getParent()+File.separator+infile.getName()+".sh"));
+            String outFileName="temp";
+            if(outputCombo.getSelectedItem()=="Roland Modela") {
+                outFileName=infile.getParent()+File.separator+infile.getName()+".sh";
+            }
+            if(outputCombo.getSelectedItem()=="G-code") {
+                outFileName=infile.getParent()+File.separator+infile.getName()+".ngc";
+            }
+            BufferedWriter out = new BufferedWriter(new FileWriter(outFileName));
             
             // START OF PREAMBLE
             
@@ -1758,7 +1760,7 @@ public class modrilla extends javax.swing.JFrame {
                     
                     //conversion math
                     
-
+                    
                     
                     xMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[0];
                     yMOD=xyMOD(xDXFa1, yDXFa1, xMODa1, yMODa1, xMODa2, yMODa2, xDXF, yDXF)[1];
@@ -1844,8 +1846,7 @@ public class modrilla extends javax.swing.JFrame {
                         out.write("echo 'PA;PU"+(int)xMODapproach+","+(int)yMODapproach+";' > "+serialDeviceField.getText()+"\n");
                     }
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        //out.write("G00 X"+xMODapproach+" Y"+yMODapproach+"\n");
-                        out.write("G00 X"+floaty.format(xMODapproach)+" Y"+yMODapproach+"\n");   //testing new formatting
+                        out.write("G00 X"+floaty.format(xMODapproach)+" Y"+floaty.format(yMODapproach)+"\n"); 
                     }
                     
                     //now move to (xMOD,yMOD) absolute, head up
@@ -1853,7 +1854,7 @@ public class modrilla extends javax.swing.JFrame {
                         out.write("echo 'PA;PU"+(int)xMOD+","+(int)yMOD+";' > "+serialDeviceField.getText()+"\n");
                     }
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        out.write("G00 X"+xMOD+" Y"+yMOD+"\n");
+                        out.write("G00 X"+floaty.format(xMOD)+" Y"+floaty.format(yMOD)+"\n");
                     }
                     
                     //drill by pecking, using RELATIVE coordinates in Z dimension
@@ -1928,7 +1929,19 @@ public class modrilla extends javax.swing.JFrame {
                     
                     //but we must raise the head to a safe drilling height for G-code:
                     if(outputCombo.getSelectedItem()=="G-code") {
-                        double zSafe=zSurface+0.2;  // FIXME!!!!  CAN'T EVENTUALLY BE A CONSTANT!
+                        double zSafeDistance=0.2;   //default value for inches
+                        if(millUnitsCombo.getSelectedItem()=="Millimeters") {
+                            zSafeDistance = 3;
+                        } else if(millUnitsCombo.getSelectedItem()=="Centimeters") {
+                            zSafeDistance = 0.3;
+                        } else if(millUnitsCombo.getSelectedItem()=="Microns") {
+                            zSafeDistance = 300;
+                        } else if(millUnitsCombo.getSelectedItem()=="Inches") {
+                            zSafeDistance = 0.2;
+                        } else if(millUnitsCombo.getSelectedItem()=="Mils") {
+                            zSafeDistance = 100;
+                        }
+                        double zSafe=zSurface+zSafeDistance;
                         out.write("G00 Z"+floaty.format(zSafe)+"\n");
                     }
                     
@@ -2080,13 +2093,13 @@ public class modrilla extends javax.swing.JFrame {
         return xyMOD;
     }
     
-   
+    
     
     // inty format (for Modela, other mills with whole-number coordinates)
     DecimalFormat inty = new DecimalFormat("##########");
     
     // floaty format
-    DecimalFormat floaty = new DecimalFormat("#####.00000");
+    DecimalFormat floaty = new DecimalFormat("####0.00000");
     
     
     File infile=null;
