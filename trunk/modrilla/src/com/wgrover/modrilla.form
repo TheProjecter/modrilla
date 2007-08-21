@@ -37,7 +37,8 @@
             <Component class="javax.swing.JEditorPane" name="jEditorPane1">
               <Properties>
                 <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;h1&gt;Modrilla v2.0&lt;/h1&gt;&#xa;&#xa;&lt;h2&gt;Copyright (c) 2007 Will Grover&lt;/h2&gt;&#xa;&#xa;Based in part on &apos;dxf2fgc&apos; copyright (c) 2007 Will Grover.  http://wgrover.com/dxf2fgc&#xa;&#xa;Based in part on &apos;cam.py&apos; copyright (c) 2006 Neil Gershenfeld, Massachusetts Institute of Technology.  Permission granted for experimental and personal use; license for commercial sale available from MIT. http://cba.mit.edu/~neilg/fab/dist/&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#xa;"/>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;h1&gt;Modrilla v2.0&lt;/h1&gt;&#xa;&#xa;Copyright &amp;#169; 2007 Will Grover.  &lt;tt&gt;http://wgrover.com/modrilla&lt;/tt&gt;&#xa;&#xa;&lt;blockquote&gt;&lt;p&gt;Based in part on &lt;b&gt;dxf2fgc&lt;/b&gt; copyright &amp;#169; 2007 Will Grover.  &lt;tt&gt;http://wgrover.com/dxf2fgc&lt;/tt&gt;&#xa;&#xa;&lt;p&gt;Based in part on &lt;b&gt;cam.py&lt;/b&gt; copyright &amp;#169; 2006 Neil Gershenfeld, Massachusetts Institute of Technology.  Permission granted for experimental and personal use; license for commercial sale available from MIT. &lt;tt&gt;http://cba.mit.edu/~neilg/fab/dist&lt;/tt&gt;&#xa;&lt;/blockquote&gt;&#xa;&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&#xa;&#xa;&lt;p&gt;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#xa;&#xa;&lt;p&gt;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&#xa;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -310,7 +311,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane1" alignment="0" pref="363" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="previousButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="155" max="32767" attributes="0"/>
@@ -323,15 +324,15 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" min="-2" pref="389" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" min="-2" pref="439" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="previousButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                   <Component id="nextButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="11" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -396,7 +397,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane3" pref="181" max="32767" attributes="0"/>
+                      <Component id="jScrollPane3" pref="231" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="alignmentModeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -519,7 +520,7 @@
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="            &lt;html&gt;&#xa;                &lt;ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Alignment mode&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Drill bit alignment:&lt;/i&gt;  The drill bit is aligned to two alignment marks on the glass.&lt;/li&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Microscope alignment:&lt;/i&gt;   Two alignment marks on the glass are sighted through a fixed microscope (NOT FULLY IMPLEMENTED).&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Input file format&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;DXF:&lt;/i&gt;  The DXF CAD format from AutoCAD, Adobe Illustrator, etc.&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Input file units:&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;li&gt;&lt;b&gt;Output file format&lt;/b&gt;&lt;/li&gt;&#xa;                    &lt;ul&gt;&#xa;                        &lt;li&gt;&lt;i&gt;G-code:&lt;/i&gt;&lt;/li&gt;&#xa;                        &lt;li&gt;&lt;i&gt;Roland Modela:&lt;/i&gt;&lt;/li&gt;&#xa;                    &lt;/ul&gt;&#xa;                &lt;/ul&gt;&#xa;            &lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Welcome to Modrilla,&lt;/b&gt; software for drilling glass microfluidic devices.  Modrilla reads in a DXF CAD file containing circles at the locations where you want to drill holes, and it creates a file that can be read by your mill or rapid prototyper to perform the drilling.  Each step of the conversion process is explained briefly in this text box.  For complete instructions, read the Modrilla documentation at &lt;tt&gt;http://openwetware.org/wiki/Modrilla&lt;/tt&gt; .&#xa;&#xa;&lt;p&gt;&lt;b&gt;Alignment mode:&lt;/b&gt;In &lt;u&gt;Drill bit alignment&lt;/u&gt;, the drill bit is aligned to two alignment marks on the glass.  In &lt;u&gt;Microscope alignment&lt;/u&gt;, two alignment marks on the glass are sighted through an optional microscope mounted on your mill (NOT YET FULLY IMPLEMENTED).&#xa;    &#xa;&lt;p&gt;&lt;b&gt;Input file format:&lt;/b&gt;  Currently only the DXF file format is suported.  The DXF file can come from programs like AutoCAD, Adobe Illustrator, FreeCAD, etc.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Input file units:&lt;/b&gt;  Pick the units for the input DXF file -- one unit in the DXF file equals one millimeter, centimeter, inch...?&#xa;&#xa;&lt;p&gt;&lt;b&gt;Output file format:&lt;/b&gt;  &lt;u&gt;G-code&lt;/u&gt; is a standard programming language for CNC mills.  The option &lt;u&gt;Roland Modela&lt;/u&gt; creates a shell script for drilling on a Roland Modela rapid prototyper.&#xa;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -538,10 +539,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jPanel2" alignment="0" pref="338" max="32767" attributes="1"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane10" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="millUnitsLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -556,8 +557,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                      <Component id="jScrollPane10" pref="347" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="millUnitsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="millUnitsCombo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -589,169 +590,16 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="millUnitsComboActionPerformed"/>
               </Events>
             </Component>
-            <Container class="javax.swing.JPanel" name="jPanel2">
-              <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder title="Mill axis orientation"/>
-                  </Border>
-                </Property>
-              </Properties>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane10">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JComboBox" name="leftSignCombo">
+                <Component class="javax.swing.JEditorPane" name="jEditorPane5">
                   <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="2">
-                        <StringItem index="0" value="+"/>
-                        <StringItem index="1" value="-"/>
-                      </StringArray>
-                    </Property>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Mill units:&lt;/b&gt;  Select the units of your mill, probably either &lt;u&gt;inches&lt;/u&gt; for a Standard mill or &lt;u&gt;millimeters&lt;/u&gt; for a Metric one.  If you selected &quot;Roland Modela&quot; output in the previous step, &lt;u&gt;Modela units&lt;/u&gt; will be selected for you here.&#xa;&#xa;&lt;/htm&gt;"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="leftSignComboActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="1" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="5" ipadY="0" insetsTop="5" insetsLeft="5" insetsBottom="5" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="frontSignCombo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="2">
-                        <StringItem index="0" value="+"/>
-                        <StringItem index="1" value="-"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="frontSignComboActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="0" gridY="5" gridWidth="1" gridHeight="1" fill="0" ipadX="5" ipadY="0" insetsTop="10" insetsLeft="5" insetsBottom="10" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="backSignCombo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="2">
-                        <StringItem index="0" value="+"/>
-                        <StringItem index="1" value="-"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backSignComboActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="0" gridY="1" gridWidth="1" gridHeight="1" fill="0" ipadX="5" ipadY="0" insetsTop="10" insetsLeft="5" insetsBottom="10" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="rightSignCombo">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="2">
-                        <StringItem index="0" value="+"/>
-                        <StringItem index="1" value="-"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rightSignComboActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="5" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="5" ipadY="0" insetsTop="5" insetsLeft="5" insetsBottom="5" insetsRight="5" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel4">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Y axis"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="0" gridY="3" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="20" insetsLeft="0" insetsBottom="20" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel7">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="X axis"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="3" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="20" insetsBottom="0" insetsRight="20" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JTextField" name="jTextField6">
-                  <Properties>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Mill worksurface"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="1" gridY="1" gridWidth="5" gridHeight="5" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel20">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="jLabel20"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="1" gridY="4" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel21">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="^"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="0" gridY="2" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel22">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="v"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="0" gridY="4" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel23">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="&gt;"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="4" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="10" insetsBottom="0" insetsRight="10" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel24">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="&lt;"/>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
-                      <GridBagConstraints gridX="2" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="10" insetsBottom="0" insetsRight="10" anchor="10" weightX="0.0" weightY="0.0"/>
-                    </Constraint>
-                  </Constraints>
                 </Component>
               </SubComponents>
             </Container>
@@ -769,10 +617,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane3" alignment="0" pref="338" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -803,7 +651,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane3" pref="245" max="32767" attributes="0"/>
+                      <Component id="jScrollPane11" pref="295" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel47" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -873,12 +721,18 @@
                 <Property name="text" type="java.lang.String" value="millimeters"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane3">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane3">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Microscope alignment is not fully implemented.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="alignToNickPanel">
@@ -893,10 +747,10 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane4" alignment="0" pref="338" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane12" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -920,7 +774,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane4" pref="271" max="32767" attributes="0"/>
+                      <Component id="jScrollPane12" pref="321" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -969,13 +823,19 @@
                 <Property name="text" type="java.lang.String" value="76"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane4">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane12">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="jEditorPane4">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Microscope alignment is not fully implemented.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="DXFmarksPanel">
@@ -990,11 +850,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jScrollPane2" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="jPanel7" alignment="0" min="-2" max="-2" attributes="1"/>
+                          <Component id="jPanel8" alignment="0" max="32767" attributes="1"/>
+                          <Component id="jPanel7" alignment="0" max="32767" attributes="1"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1004,9 +865,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" pref="244" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" pref="215" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1102,11 +965,101 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JEditorPane" name="jEditorPane5">
+                <Component class="javax.swing.JEditorPane" name="dxfMarksEditorPane">
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Enter the DXF file coordinates of the first (leftmost) alignment mark.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;If you don&apos;t know these coordinates, open your DXF file in AutoCAD, Adobe Illustrator, etc., locate the leftmost alignment mark, and read off the coordiantes of the mark.  Enter those coordinates below.&#xa;&#xa;&lt;p&gt;If the units below are not the same as the units of your DXF file, click &quot;Previous step&quot; to go back to the &quot;Setup&quot; step and enter the correct units at &quot;DXF file units.&quot;&#xa;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Enter the DXF file coordinates of the first (leftmost) alignment mark.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;If you don&apos;t know these coordinates, open your DXF file in AutoCAD, Adobe Illustrator, etc., locate the leftmost alignment mark, and read off the coordiantes of the mark.  Enter those coordinates below.&#xa;&#xa;&lt;p&gt;If the units below are not the same as the units of your DXF file, click &quot;Previous step&quot; to go back to the &quot;Setup&quot; step and enter the correct units at &quot;DXF file units.&quot;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel8">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Second alignment mark (not necessary for this step)"/>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="xDXFa1Field1" pref="239" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="xDXFa1UnitsLabel1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="yDXFa1Field1" pref="239" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="yDXFa1UnitsLabel1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="xDXFa1UnitsLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="xDXFa1Field1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="yDXFa1UnitsLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="yDXFa1Field1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel17">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="X:"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="xDXFa1Field1">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="xDXFa1UnitsLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="millimeters"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel20">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Y:"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="yDXFa1Field1">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="yDXFa1UnitsLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="millimeters"/>
+                    <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -1125,12 +1078,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane6" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="jPanel10" alignment="1" max="32767" attributes="0"/>
-                          <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane8" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Component id="jPanel10" alignment="1" max="32767" attributes="3"/>
+                          <Component id="jPanel9" alignment="0" max="32767" attributes="3"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1140,12 +1093,12 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane6" pref="165" max="32767" attributes="0"/>
+                      <Component id="jScrollPane8" min="-2" pref="205" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel10" min="-2" pref="76" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1287,6 +1240,7 @@
                               <Component id="yMODa2UnitsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="yMODa2Field" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1324,13 +1278,19 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane6">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="millMarksEditorPane">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Move the drill bit directly above the first (leftmost) alignment mark, read off the coordinates from the mill, and enter them below under &lt;u&gt;First alignment mark&lt;/u&gt;.  Then move the drill bit directly above the second (rightmost) alignment mark and enter the mill coordinates under &lt;u&gt;Second alignment mark&lt;/u&gt;.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;If the units below are not the same as the units of your DXF file, click &quot;Previous step&quot; to go back to the &quot;Setup&quot; step and enter the correct units at &quot;DXF file units.&quot;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel1">
@@ -1345,11 +1305,11 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jEditorPane7" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane9" alignment="0" pref="338" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="zSurfaceLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSurfaceField" pref="271" max="32767" attributes="0"/>
@@ -1365,7 +1325,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jEditorPane7" pref="297" max="32767" attributes="0"/>
+                      <Component id="jScrollPane9" pref="347" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="zSurfaceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1393,13 +1353,19 @@
                 <Property name="text" type="java.lang.String" value="100"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JEditorPane" name="jEditorPane7">
-              <Properties>
-                <Property name="contentType" type="java.lang.String" value="text/html"/>
-                <Property name="editable" type="boolean" value="false"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Do this.&lt;/b&gt;  Here are some more details.&#xa;&#xa;&lt;/html&gt;"/>
-              </Properties>
-            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JEditorPane" name="drillNickEditorPane">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" value="text/html"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;b&gt;Move the drill bit above an area on your glass piece that won&apos;t be damaged when we make a small nick in the glass surface.  Place a drop of water on your glass piece beneath the bit, turn on the drilling motor, and slowly step the drill bit down in the Z dimension until the spinning bit barely contacts the surface of the glass.  Immediately turn off the drilling motor, leaving the drill bit in contact with the glass surface.  Read off the current Z coordinate from the mill and enter it below.&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;If you are generating code for a Roland Modela,&lt;/b&gt; leave the drill bit in contact with the glass surface and go on to the next step (don&apos;t enter any coordinates below).&#xa;&#xa;&lt;p&gt;&lt;b&gt;Otherwise, raise the bit above the surface of the glass and go on to the next step.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel11">
@@ -1414,9 +1380,9 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jScrollPane4" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="serialDeviceLabel" min="-2" max="-2" attributes="0"/>
@@ -1431,7 +1397,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zSpeedField" pref="196" max="32767" attributes="0"/>
+                              <Component id="zSpeedField" pref="160" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1464,7 +1430,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="zDrillSpeedField" pref="233" max="32767" attributes="0"/>
+                              <Component id="zDrillSpeedField" pref="197" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zDrillSpeedUnitsLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -1477,7 +1443,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane4" min="-2" pref="115" max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" min="-2" pref="144" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="fooLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1551,7 +1517,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="overdrillField">
               <Properties>
-                <Property name="text" type="java.lang.String" value="400"/>
+                <Property name="text" type="java.lang.String" value="500"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel33">
@@ -1581,12 +1547,12 @@
             </Component>
             <Component class="javax.swing.JTextField" name="zSpeedField">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0.01"/>
+                <Property name="text" type="java.lang.String" value="10"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="zSpeedUnitsLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="mm/min"/>
+                <Property name="text" type="java.lang.String" value="Mill speed units"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel38">
@@ -1596,7 +1562,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="repeatsField">
               <Properties>
-                <Property name="text" type="java.lang.String" value="3"/>
+                <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="serialDeviceLabel">
@@ -1618,12 +1584,12 @@
             </Component>
             <Component class="javax.swing.JTextField" name="zDrillSpeedField">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0.01"/>
+                <Property name="text" type="java.lang.String" value="0.1"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="zDrillSpeedUnitsLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="mm/min"/>
+                <Property name="text" type="java.lang.String" value="Mill speed units"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="fooLabel">
@@ -1635,7 +1601,7 @@
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="2">
-                    <StringItem index="0" value="mm/min"/>
+                    <StringItem index="0" value="Mill speed units"/>
                     <StringItem index="1" value="Modela units/sec"/>
                   </StringArray>
                 </Property>
@@ -1648,11 +1614,11 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JEditorPane" name="jEditorPane8">
+                <Component class="javax.swing.JEditorPane" name="optionsEditorPane">
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill Z speed units&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Z drill speed&lt;/b&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Glass thickness&lt;/b&gt; is the thickness of your &quot;good&quot; piece of glass, in microns.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Overdrill&lt;/b&gt; is the distance to drill past the backside of the &quot;good&quot; piece of glass and into the &quot;bad&quot; backing piece of glass. The default value of 500 microns is usually OK. Be sure that your &quot;bad&quot; backing wafer is thicker than the &lt;i&gt;Overdrill&lt;/i&gt; depth!&#xa;&#xa;&lt;p&gt;&lt;b&gt;Peck depth&lt;/b&gt; is the amount of glass removed per peck; the default 100 microns is usually OK.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Non-drilling Z speed&lt;/b&gt;&#xa;&#xa;settings were arrive at by trial and error and probably shouldn&apos;t be changed unless you know what you&apos;re doing.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Repeats per peck&lt;/b&gt; is the number of times each peck is repeated before moving on to the next depth.  This should remain at &quot;1&quot; unless bending or looseness in the mill mechanism necessitates repeated pecks.  For the Roland Modela, set &lt;i&gt;Repeats per peck&lt;/i&gt; to 3.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill serial device&lt;/b&gt; is the full path to the Linux serial device to which the Roland Modela is connected.&#xa;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill Z speed units:&lt;/b&gt;   &lt;u&gt;Mill speed units&lt;/u&gt; means that you wil specify Z-axis (drilling) speeds in whatever are the default speed units for your mill, probably inches/minute or millimeters/minute.  Modrilla doesn&apos;t need to know the exact units.  Specify &lt;u&gt;Modrilla units/sec&lt;/u&gt; if you are preparing a file for a Roland Modela.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Z drill speed:&lt;/b&gt;  This is the slow speed at which the drill bit will be lowered during drilling, usually around 0.1 inches/minute, 2.54 millimeters/minute, or 0.01 Modrilla units/second.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Glass thickness&lt;/b&gt; is the thickness of your &quot;good&quot; piece of glass, in microns.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Overdrill&lt;/b&gt; is the distance to drill past the backside of the &quot;good&quot; piece of glass and into the &quot;bad&quot; backing piece of glass. The default value of 500 microns is usually OK. Be sure that your &quot;bad&quot; backing wafer is thicker than the &lt;i&gt;Overdrill&lt;/i&gt; depth!&#xa;&#xa;&lt;p&gt;&lt;b&gt;Peck depth&lt;/b&gt; is the amount of glass removed per peck; the default 100 microns is usually OK.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Peck distance,&lt;/b&gt; the amount of glass removed per peck, should be 100 microns or less.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Non-drilling Z speed&lt;/b&gt; is the fast speed at which the drill bit is raised or lowered during non-drilling motions, usually around 10 inches/minute, 25.4 millimeters/minute, or 10 Modrilla units/second.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Repeats per peck&lt;/b&gt; is the number of times each peck is repeated before moving on to the next depth.  This should remain at &quot;1&quot; unless bending or looseness in the mill mechanism necessitates repeated pecks.  For the Roland Modela, set &lt;i&gt;Repeats per peck&lt;/i&gt; to 3.&#xa;&#xa;&lt;p&gt;&lt;b&gt;Mill serial device&lt;/b&gt; is the full path to the Linux serial device to which the Roland Modela is connected.&#xa;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -1676,7 +1642,7 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jScrollPane5" alignment="0" pref="338" max="32767" attributes="0"/>
                           <Component id="jScrollPane7" alignment="0" pref="338" max="32767" attributes="0"/>
-                          <Component id="selectInputFileButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="selectInputFileButton" alignment="0" pref="338" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1686,7 +1652,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane5" min="-2" pref="192" max="-2" attributes="0"/>
+                      <Component id="jScrollPane5" min="-2" pref="221" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="selectInputFileButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1730,7 +1696,7 @@
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
                     <Property name="editable" type="boolean" value="false"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Click &lt;i&gt;Select DXF file&lt;/i&gt; and select your DXF file.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&#xa;&lt;p&gt;&lt;b&gt;Click &lt;u&gt;Select DXF file&lt;/u&gt; and select your input DXF file.&lt;/b&gt;&#xa;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -1764,7 +1730,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane6" pref="265" max="32767" attributes="0"/>
+                      <Component id="jScrollPane6" pref="315" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -1798,7 +1764,7 @@
                 <Component class="javax.swing.JEditorPane" name="jEditorPane2">
                   <Properties>
                     <Property name="contentType" type="java.lang.String" value="text/html"/>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Click the buttons below to review the hole locations in the input and output files.&lt;/b&gt;&#xa;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Click the buttons below to review the hole locations in the input and output files (NOT FULLY IMPLEMENTED).&lt;/b&gt;&#xa;&lt;/html&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
