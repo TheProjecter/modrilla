@@ -1519,6 +1519,10 @@ public class modrilla extends javax.swing.JFrame {
         zSpeedUnitsLabel.setText(zDrillSpeedUnitsCombo.getSelectedItem().toString());
     }//GEN-LAST:event_zDrillSpeedUnitsComboActionPerformed
     
+    /**
+     * 
+     * @param evt 
+     */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         
         plotDialog.setVisible(true);
