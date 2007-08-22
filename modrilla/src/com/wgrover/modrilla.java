@@ -4,10 +4,8 @@
  * Created on July 13, 2007, 8:53 PM
  */
 
-// TO DO:
-// fix gd plot eventually
-// default feedrate for g-code of 0.1
-// fix bad use of if(a=="foo") for string equivalency checking, replace with if(a.equals("foo"))
+// FIXME fix gd plot eventually
+// FIXME fix bad use of if(a=="foo") for string equivalency checking, replace with if(a.equals("foo"))
 
 package com.wgrover;
 
@@ -1253,17 +1251,16 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_copyXButtonActionPerformed
     
     private void unitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitsComboActionPerformed
-// TODO add your handling code here:
         xDXFa1UnitsLabel.setText(unitsCombo.getSelectedItem().toString().toLowerCase());
         yDXFa1UnitsLabel.setText(unitsCombo.getSelectedItem().toString().toLowerCase());
     }//GEN-LAST:event_unitsComboActionPerformed
     
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-// TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox2ActionPerformed
     
     private void minusYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusYButtonActionPerformed
-// TODO add your handling code here:
+
         try {
             if (speedCombo.getSelectedItem() == "Slow") {
                 Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,-5;' > " + serialDeviceField.getText()});
@@ -1279,7 +1276,7 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_minusYButtonActionPerformed
     
     private void plusYButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusYButtonActionPerformed
-// TODO add your handling code here:
+
         try {
             if (speedCombo.getSelectedItem() == "Slow") {
                 Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD0,5;' > " + serialDeviceField.getText()});
@@ -1295,7 +1292,7 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_plusYButtonActionPerformed
     
     private void minusXButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusXButtonActionPerformed
-// TODO add your handling code here:
+
         try {
             if (speedCombo.getSelectedItem() == "Slow") {
                 Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD-5,0;' > " + serialDeviceField.getText()});
@@ -1311,7 +1308,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_minusXButtonActionPerformed
     
     private void plusXButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusXButtonActionPerformed
-// TODO add your handling code here:
         try {
             if (speedCombo.getSelectedItem() == "Slow") {
                 Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", "echo '!PZ0,500;!MC0;PR;PD5,0;' > " + serialDeviceField.getText()});
@@ -1327,14 +1323,10 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_plusXButtonActionPerformed
     
     private void speedComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speedComboActionPerformed
-// TODO add your handling code here:
     }//GEN-LAST:event_speedComboActionPerformed
     
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-// TODO add your handling code here:
-        
-        
-        
+
         
         
         
@@ -1461,7 +1453,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
     
     private void alignmentModeComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alignmentModeComboActionPerformed
-// TODO add your handling code here:
         if (alignmentModeCombo.getSelectedItem() == "Drill bit alignment") {
             jTabbedPane1.setEnabledAt(2, false);
             jTabbedPane1.setEnabledAt(3, false);
@@ -1474,7 +1465,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_alignmentModeComboActionPerformed
     
     private void millUnitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_millUnitsComboActionPerformed
-// TODO add your handling code here:
         xNickWhenDrilledUnitsLabel.setText(millUnitsCombo.getSelectedItem().toString().toLowerCase());
         yNickWhenDrilledUnitsLabel.setText(millUnitsCombo.getSelectedItem().toString().toLowerCase());
         zNickWhenDrilledUnitsLabel.setText(millUnitsCombo.getSelectedItem().toString().toLowerCase());
@@ -1489,7 +1479,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_millUnitsComboActionPerformed
     
     private void outputComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outputComboActionPerformed
-// TODO add your handling code here:
         if (outputCombo.getSelectedItem() == "G-code") {
             serialDeviceLabel.setEnabled(false);
             serialDeviceField.setEnabled(false);
@@ -1526,7 +1515,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_outputComboActionPerformed
     
     private void zDrillSpeedUnitsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zDrillSpeedUnitsComboActionPerformed
-// TODO add your handling code here:
         zDrillSpeedUnitsLabel.setText(zDrillSpeedUnitsCombo.getSelectedItem().toString());
         zSpeedUnitsLabel.setText(zDrillSpeedUnitsCombo.getSelectedItem().toString());
     }//GEN-LAST:event_zDrillSpeedUnitsComboActionPerformed
@@ -1557,17 +1545,13 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
     
     private void xMODa1FieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xMODa1FieldActionPerformed
-// TODO add your handling code here:
     }//GEN-LAST:event_xMODa1FieldActionPerformed
     
     private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
-// TODO add your handling code here:
         aboutDialog.setVisible(!aboutDialog.isVisible());
     }//GEN-LAST:event_aboutButtonActionPerformed
     
     private void selectInputFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectInputFileButtonActionPerformed
-        // TODO add your handling code here:
-        
         jFileChooser1.showOpenDialog(this);
         inputFileTextArea.setText(jFileChooser1.getSelectedFile().toString());
         infile=jFileChooser1.getSelectedFile();
@@ -2001,7 +1985,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jTabbedPane1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane1StateChanged
-// TODO add your handling code here:
         if (jTabbedPane1.getSelectedIndex() == 0) {
             previousButton.setEnabled(false);
         } else {
@@ -2015,7 +1998,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane1StateChanged
     
     private void previousButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousButtonActionPerformed
-// TODO add your handling code here:
         if (jTabbedPane1.getSelectedIndex() > 0) {
             jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() - 1);
         }
@@ -2035,7 +2017,6 @@ public class modrilla extends javax.swing.JFrame {
     }//GEN-LAST:event_previousButtonActionPerformed
     
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
-// TODO add your handling code here:
         if (jTabbedPane1.getSelectedIndex() < jTabbedPane1.getComponentCount() - 1) {
             jTabbedPane1.setSelectedIndex(jTabbedPane1.getSelectedIndex() + 1);
         }
